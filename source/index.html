@@ -17,18 +17,18 @@
           <span class="visually-hidden">Открытие меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item nav-list__item--active">
               <a>
                 Главная
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="nav-list__item">
               <a href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="nav-list__item">
               <a href="form.html">
                 Подбор программы
               </a>
@@ -63,8 +63,8 @@
       <section class="healthy-food">
         <h2 class="visually-hidden">Цели программы питания Кэт-Энерджи</h2>
         <div class="healthy-food__wrapper">
-          <ul class="healthy-food__list">
-            <li class="healthy-food__item slim-food">
+          <ul class="healthy-food-list">
+            <li class="healthy-food-list__item slim-food">
               <div class="slim-food__wrapper">
                 <img class="slim-food__icon" src="img/svg/icon-cat/cat-icon-slim-mobile.svg" width="50" height="53" alt="Иконка стройного кота">
                 <h3 class="slim-food__title">Похудение</h3>
@@ -80,7 +80,7 @@
                 </a>
               </div>
             </li>
-            <li class="healthy-food__item pro-food">
+            <li class="healthy-food-list__item pro-food">
               <div class="pro-food__wrapper">
                 <img class="pro-food__icon" src="img/svg/icon-cat/cat-icon-bro-mobile.svg" width="67" height="50" alt="Иконка массивного кота">
                 <h3 class="pro-food__title">Набор массы</h3>
@@ -105,8 +105,8 @@
           <h2 class="food-benefits__title">
             Как это работает
           </h2>
-          <ul class="food-benefits__list">
-            <li class="food-benefits__item benefits-content">
+          <ul class="food-benefits-list">
+            <li class="food-benefits-list__item benefits-content">
               <div class="benefits-content__wrapper">
                 <img class="benefits-content__icon" src="img/svg/icon-benefits/benefits-icon-1.svg" width="60" height="60" alt="Иконка с преимуществами №1">
                 <p class="benefits-content__text">
@@ -116,7 +116,7 @@
                 </p>
               </div>
             </li>
-            <li class="food-benefits__item benefits-content">
+            <li class="food-benefits-list__item benefits-content">
               <div class="benefits-content__wrapper">
                 <img class="benefits-content__icon" src="img/svg/icon-benefits/benefits-icon-2.svg" width="60" height="60" alt="Иконка с преимуществами №2">
                 <p class="benefits-content__text">
@@ -126,7 +126,7 @@
                 </p>
               </div>
             </li>
-            <li class="food-benefits__item benefits-content">
+            <li class="food-benefits-list__item benefits-content">
               <div class="benefits-content__wrapper">
                 <img class="benefits-content__icon" src="img/svg/icon-benefits/benefits-icon-3.svg" width="60" height="60" alt="Иконка с преимуществами №3">
                 <p class="benefits-content__text">
@@ -136,7 +136,7 @@
                 </p>
               </div>
             </li>
-            <li class="food-benefits__item benefits-content">
+            <li class="food-benefits-list__item benefits-content">
               <div class="benefits-content__wrapper">
                 <img class="benefits-content__icon" src="img/svg/icon-benefits/benefits-icon-3.svg" width="60" height="60" alt="Иконка с преимуществами №4">
                 <p class="benefits-content__text">
@@ -189,16 +189,14 @@
             </div>
           </div>
           <img class="live-example__image" src="img/jpg/live-example-mobile.jpg" width="280" height="232" alt="Живой пример сброса веса">
-          <form class="live-example__form live-example-form">
-            <div class="live-example-form__range">
-              <label class="live-example-form__range-before">
-                было <input type="range" name="change">
-              </label>
-              <label class="live-example-form__range-after">
-                стало
-              </label>
-            </div>
-          </form>
+          <div class="live-example__range">
+            <label class="live-example__range-before">
+              было <input type="range" name="change">
+            </label>
+            <label class="live-example-form__range-after">
+              стало
+            </label>
+          </div>
         </div>
       </section>
     </main>
@@ -226,30 +224,30 @@
           <img src="img/svg/footer-logo-title.svg" width="128" height="24" alt="Логотип Кэт-Энерджи">
         </div>
         <div class="page-footer__networks networks">
-          <ul class="networks__list">
-            <li class="networks__item">
-              <a class="networks__item-button" href="#">
+          <ul class="networks-list">
+            <li class="networks-list__item">
+              <a class="networks-list__item-button" href="#">
                 <img src="img/svg/icon-social/icon-vkontakte.svg" width="23" height="16" alt="Иконка ВКонтакте">
               </a>
             </li>
-            <li class="networks__item">
-              <a class="networks__item-button" href="#">
+            <li class="networks-list__item">
+              <a class="networks-list__item-button" href="#">
                 <img src="img/svg/icon-social/icon-instagram.svg" width="16" height="16" alt="Иконка Инстаграмм">
               </a>
             </li>
-            <li class="networks__item">
-              <a class="networks__item-button" href="#">
+            <li class="networks-list__item">
+              <a class="networks-list__item-button" href="#">
                 <img src="img/svg/icon-social/icon-facebook.svg" width="22" height="22" alt="Иконка Фейсбук">
               </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <ul class="copyright__list">
-            <li class="copyright__item">
+          <ul class="copyright-list">
+            <li class="copyright-list__item">
               <img src="img/svg/html-academy.svg" width="114" height="18" alt="Разработчик HTML-Academy">
             </li>
-            <li class="copyright__item">
+            <li class="copyright-list__item">
               <img src="img/svg/logo-html-academy.svg" width="27" height="34" alt="Логотип HTML-Academy">
             </li>
           </ul>
