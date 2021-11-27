@@ -4,9 +4,271 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page-body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" width="33" height="37" alt="Логотип Кэт-Энерджи">
+      </a>
+      <a class="page-header__logo-title">
+        <img class="page-header__logo-title-image" src="img/svg/logo-title.svg" width="101" height="18" alt="Логотип-заголовок Кэт-Энерджи">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открытие меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        "Кэт-Энерджи" - уникальный продукт для котов
+      </h1>
+      <section class="food-program">
+        <div class="food-program__wrapper">
+          <header class="food-program__header">
+            <h2 class="visually-hidden">
+              Выбрать программу питания "Кэт-Энерджи"
+            </h2>
+            <p class="food-program__intro">
+              Функциональное питание для котов
+            </p>
+            <p class="food-program__slogan">
+              Занялся собой? Займись котом!
+            </p>
+          </header>
+          <div class="food-program__image-wrapper">
+            <img class="food-program__image" src="img/jpg/food-program-can-mobile.jpg" width="280" height="270" alt="Изображение питания для кота">
+          </div>
+          <a class="food-program__button" href="form.html">Подобрать программу</a>
+        </div>
+      </section>
+      <section class="healthy-food">
+        <h2 class="visually-hidden">Цели программы питания Кэт-Энерджи</h2>
+        <div class="healthy-food__wrapper">
+          <ul class="healthy-food__list">
+            <li class="healthy-food__item slim-food">
+              <div class="slim-food__wrapper">
+                <img class="slim-food__icon" src="img/svg/cat-icon-slim-mobile.svg" width="50" height="53" alt="Иконка стройного кота">
+                <h3 class="slim-food__title">Похудение</h3>
+                <p class="slim-food__text">
+                  Ваш кот весит больше собаки и<br>
+                  почти утратил способность лазить<br>
+                  по деревьям? Пора на диету! Cat<br>
+                  Energy Slim поможет вашему<br>
+                  питомцу сбросить лишний вес.
+                </p>
+                <a class="slim-food__button" href="catalog.html">Каталог Slim
+                  <img class="slim-food__button-icon" src="img/svg/arrow.svg" width="32" height="10" alt="Стрелка-ссылка">
+                </a>
+              </div>
+            </li>
+            <li class="healthy-food__item pro-food">
+              <div class="pro-food__wrapper">
+                <img class="pro-food__icon" src="img/svg/cat-icon-bro-mobile.svg" width="67" height="50" alt="Иконка массивного кота">
+                <h3 class="pro-food__title">Набор массы</h3>
+                <p class="pro-food__text">
+                  Заработать авторитет среди<br>
+                  дворовых котов и даже собак<br>
+                  Серия Cat Energy Pro поможет<br>
+                  вашему коту нарастить<br>
+                  необходимые мышцы!
+                </p>
+                <a class="pro-food__button" href="catalog.html">Каталог Pro
+                  <img class="pro-food__button-icon" src="img/svg/arrow.svg" width="32" height="10" alt="Стрелка-ссылка">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="food-benefits">
+        <h2 class="visually-hidden">Преимущества питания программы Кэт-Энерджи</h2>
+        <div class="food-benefits__wrapper">
+          <h2 class="food-benefits__title">
+            Как это работает
+          </h2>
+          <ul class="food-benefits__list">
+            <li class="food-benefits__item benefits-content">
+              <div class="benefits-content__wrapper">
+                <img class="benefits-content__icon" src="img/svg/benefits-icon-1.svg" width="60" height="60" alt="Иконка с преимуществами №1">
+                <p class="benefits-content__text">
+                  Функционально питание<br>
+                  содержит только полезные<br>
+                  питательные вещества.
+                </p>
+              </div>
+            </li>
+            <li class="food-benefits__item benefits-content">
+              <div class="benefits-content__wrapper">
+                <img class="benefits-content__icon" src="img/svg/benefits-icon-2.svg" width="60" height="60" alt="Иконка с преимуществами №2">
+                <p class="benefits-content__text">
+                  Выпускается в виде порошка,<br>
+                  который нужно лишь залить<br>
+                  кипятком и готово.
+                </p>
+              </div>
+            </li>
+            <li class="food-benefits__item benefits-content">
+              <div class="benefits-content__wrapper">
+                <img class="benefits-content__icon" src="img/svg/benefits-icon-3.svg" width="60" height="60" alt="Иконка с преимуществами №3">
+                <p class="benefits-content__text">
+                  Замените один-два приёма<br>
+                  обычной еды на наше<br>
+                  функциональное питание.
+                </p>
+              </div>
+            </li>
+            <li class="food-benefits__item benefits-content">
+              <div class="benefits-content__wrapper">
+                <img class="benefits-content__icon" src="img/svg/benefits-icon-3.svg" width="60" height="60" alt="Иконка с преимуществами №4">
+                <p class="benefits-content__text">
+                  Уже через месяц<br>
+                  наслаждайтесь изменениями<br>
+                  к лучшему вашего питомца!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="live-example">
+        <h2 class="visually-hidden">Живой пример программы питания</h2>
+        <div class="live-example__wrapper">
+          <h2 class="live-example__title">
+            Живой пример
+          </h2>
+          <p class="live-example__text">
+            Борис сбросил 5 кг за 2 месяца, просто<br>
+            заменив свой обычный корм на Cat Energy<br>
+            Slim. Отличный результат без изнуряющих<br>
+            тренировок! При этом он не минял своих<br>
+            привычек и по-прежнему спит по 16 часов<br>
+            в день.
+          </p>
+          <div class="live-example__stats example-stats">
+            <dl class="example-stats__list">
+              <div class="example-stats__item">
+                <dt class="example-stats__weight">
+                  5 кг
+                </dt>
+                <dd class="example-stats__description">
+                  снижение веса
+                </dd>
+              </div>
+              <div class="example-stats__item">
+                <dt class="example-stats__time">
+                  60 дней
+                </dt>
+                <dd class="example-stats__description">
+                  затрачено времени
+                </dd>
+              </div>
+            </dl>
+            <div class="live-example__costs total-costs">
+              <p class="total-costs__text">
+                Затраты на питание: 15 000 руб.
+              </p>
+            </div>
+          </div>
+          <img class="live-example__image" src="img/jpg/live-example-mobile.jpg" width="280" height="232" alt="Живой пример сброса веса">
+          <form class="live-example__form">
+            <fieldset class="live-example__fieldset cat-change">
+              <div class="cat-change__range">
+                <div class="cat-change__range-controls">
+                  <div class="scale">
+                    <div class="bar">
+                    </div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+                <div class="appearance-controls">
+                  <label class="appearance-controls-label">
+                    было <input type="number" name="min">
+                  </label>
+                  <label class="appearance-controls-label appearance-controls-label-before">
+                    стало  <input type="number" name="max">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__location">
+        <h2 class="visually-hidden">Локация и адрес местонаходения</h2>
+        <div class="page-footer__invitation">
+          <p class="page-footer__invitation-text">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+        </div>
+        <div class="page-footer__address">
+          <address class="page-footer__contact-address">
+            ул.Большая<br>
+            Конюшенная, д.19/8<br>
+            Санкт-Петербург
+          </address>
+        </div>
+        <img class="page-footer__map" src="img/jpg/map-mobile.jpg" width="320" height="362" alt="Карта с адресом офиса">
+        <img class="page-footer__point" src="img/svg/logo-point-on-map.svg" width="57" height="53" alt="Точка на карте">
+      </div>
+      <div class="page-footer__social-networks footer-social-networks">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="footer-social-networks__list">
+          <li class="footer-social-networks__item">
+            <img class="page-footer__logo" src="img/svg/footer-logo-title.svg" width="128" height="24" alt="Логотип Кэт-Энерджи">
+          </li>
+          <li class="footer-social-networks__item networks">
+            <ul class="networks-list">
+              <li class="networks-item">
+                <a class="networks-item__button" href="#">
+                  <img src="img/svg/icon-vkontakte.svg" width="23" height="16" alt="Иконка ВКонтакте">
+                </a>
+              </li>
+              <li class="networks-item">
+                <a class="networks-item__button" href="#">
+                  <img src="img/svg/icon-instagram.svg" width="16" height="16" alt="Иконка Инстаграмм">
+                </a>
+              </li>
+              <li class="networks-item">
+                <a class="networks-item__button" href="#">
+                  <img src="img/svg/icon-facebook.svg" width="22" height="22" alt="Иконка Фейсбук">
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-social-networks__item footer-developer">
+            <ul class="footer-developer__list">
+              <li class="footer-developer__item">
+                <img src="img/svg/html-academy.svg" width="114" height="18" alt="Разработчик HTML-Academy">
+              </li>
+              <li class="footer-developer__item">
+                <img src="img/svg/logo-html-academy.svg" width="27" height="34" alt="Логотип HTML-Academy">
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
