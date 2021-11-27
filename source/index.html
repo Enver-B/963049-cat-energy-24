@@ -24,9 +24,9 @@
               </a>
             </li>
             <li class="main-nav__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
+              <a href="catalog.html">
+                Каталог продукции
+              </a>
             </li>
             <li class="main-nav__item">
               <a href="form.html">
@@ -66,7 +66,7 @@
           <ul class="healthy-food__list">
             <li class="healthy-food__item slim-food">
               <div class="slim-food__wrapper">
-                <img class="slim-food__icon" src="img/svg/cat-icon-slim-mobile.svg" width="50" height="53" alt="Иконка стройного кота">
+                <img class="slim-food__icon" src="img/svg/icon-cat/cat-icon-slim-mobile.svg" width="50" height="53" alt="Иконка стройного кота">
                 <h3 class="slim-food__title">Похудение</h3>
                 <p class="slim-food__text">
                   Ваш кот весит больше собаки и<br>
@@ -82,7 +82,7 @@
             </li>
             <li class="healthy-food__item pro-food">
               <div class="pro-food__wrapper">
-                <img class="pro-food__icon" src="img/svg/cat-icon-bro-mobile.svg" width="67" height="50" alt="Иконка массивного кота">
+                <img class="pro-food__icon" src="img/svg/icon-cat/cat-icon-bro-mobile.svg" width="67" height="50" alt="Иконка массивного кота">
                 <h3 class="pro-food__title">Набор массы</h3>
                 <p class="pro-food__text">
                   Заработать авторитет среди<br>
@@ -105,10 +105,10 @@
           <h2 class="food-benefits__title">
             Как это работает
           </h2>
-          <ul class="food-benefits__list">
+          <ul class="food-benefits__list-item">
             <li class="food-benefits__item benefits-content">
               <div class="benefits-content__wrapper">
-                <img class="benefits-content__icon" src="img/svg/benefits-icon-1.svg" width="60" height="60" alt="Иконка с преимуществами №1">
+                <img class="benefits-content__icon" src="img/svg/icon-benefits/benefits-icon-1.svg" width="60" height="60" alt="Иконка с преимуществами №1">
                 <p class="benefits-content__text">
                   Функционально питание<br>
                   содержит только полезные<br>
@@ -118,7 +118,7 @@
             </li>
             <li class="food-benefits__item benefits-content">
               <div class="benefits-content__wrapper">
-                <img class="benefits-content__icon" src="img/svg/benefits-icon-2.svg" width="60" height="60" alt="Иконка с преимуществами №2">
+                <img class="benefits-content__icon" src="img/svg/icon-benefits/benefits-icon-2.svg" width="60" height="60" alt="Иконка с преимуществами №2">
                 <p class="benefits-content__text">
                   Выпускается в виде порошка,<br>
                   который нужно лишь залить<br>
@@ -128,7 +128,7 @@
             </li>
             <li class="food-benefits__item benefits-content">
               <div class="benefits-content__wrapper">
-                <img class="benefits-content__icon" src="img/svg/benefits-icon-3.svg" width="60" height="60" alt="Иконка с преимуществами №3">
+                <img class="benefits-content__icon" src="img/svg/icon-benefits/benefits-icon-3.svg" width="60" height="60" alt="Иконка с преимуществами №3">
                 <p class="benefits-content__text">
                   Замените один-два приёма<br>
                   обычной еды на наше<br>
@@ -138,7 +138,7 @@
             </li>
             <li class="food-benefits__item benefits-content">
               <div class="benefits-content__wrapper">
-                <img class="benefits-content__icon" src="img/svg/benefits-icon-3.svg" width="60" height="60" alt="Иконка с преимуществами №4">
+                <img class="benefits-content__icon" src="img/svg/icon-benefits/benefits-icon-3.svg" width="60" height="60" alt="Иконка с преимуществами №4">
                 <p class="benefits-content__text">
                   Уже через месяц<br>
                   наслаждайтесь изменениями<br>
@@ -163,8 +163,8 @@
             привычек и по-прежнему спит по 16 часов<br>
             в день.
           </p>
-          <div class="live-example__stats example-stats">
-            <dl class="example-stats__list">
+          <div class="live-example__stats">
+            <dl class="example-stats">
               <div class="example-stats__item">
                 <dt class="example-stats__weight">
                   5 кг
@@ -189,41 +189,29 @@
             </div>
           </div>
           <img class="live-example__image" src="img/jpg/live-example-mobile.jpg" width="280" height="232" alt="Живой пример сброса веса">
-          <form class="live-example__form">
-            <fieldset class="live-example__fieldset cat-change">
-              <div class="cat-change__range">
-                <div class="cat-change__range-controls">
-                  <div class="scale">
-                    <div class="bar">
-                    </div>
-                  </div>
-                  <div class="toggle toggle-min" tabindex="0"></div>
-                  <div class="toggle toggle-max" tabindex="0"></div>
-                </div>
-                <div class="appearance-controls">
-                  <label class="appearance-controls-label">
-                    было <input type="number" name="min">
-                  </label>
-                  <label class="appearance-controls-label appearance-controls-label-before">
-                    стало  <input type="number" name="max">
-                  </label>
-                </div>
-              </div>
-            </fieldset>
+          <form class="live-example__form live-example-form">
+            <div class="live-example-form__range">
+              <label class="live-example-form__range-before">
+                было <input type="range" name="change">
+              </label>
+              <label class="live-example-form__range-after">
+                стало
+              </label>
+            </div>
           </form>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__location">
+      <div class="page-footer__location location">
         <h2 class="visually-hidden">Локация и адрес местонаходения</h2>
-        <div class="page-footer__invitation">
-          <p class="page-footer__invitation-text">
+        <div class="location__invitation">
+          <p class="location__invitation-text">
             Приглашаем к сотрудничеству дилеров!
           </p>
         </div>
-        <div class="page-footer__address">
-          <address class="page-footer__contact-address">
+        <div class="location__address">
+          <address class="location__contact-address">
             ул.Большая<br>
             Конюшенная, д.19/8<br>
             Санкт-Петербург
@@ -234,31 +222,31 @@
       </div>
       <div class="page-footer__social-networks footer-social-networks">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="footer-social-networks__list">
+        <ul class="footer-social-networks__list-item">
           <li class="footer-social-networks__item">
             <img class="page-footer__logo" src="img/svg/footer-logo-title.svg" width="128" height="24" alt="Логотип Кэт-Энерджи">
           </li>
           <li class="footer-social-networks__item networks">
-            <ul class="networks-list">
-              <li class="networks-item">
-                <a class="networks-item__button" href="#">
-                  <img src="img/svg/icon-vkontakte.svg" width="23" height="16" alt="Иконка ВКонтакте">
+            <ul class="networks__list-item">
+              <li class="networks__item">
+                <a class="networks__item-button" href="#">
+                  <img src="img/svg/icon-social/icon-vkontakte.svg" width="23" height="16" alt="Иконка ВКонтакте">
                 </a>
               </li>
-              <li class="networks-item">
-                <a class="networks-item__button" href="#">
-                  <img src="img/svg/icon-instagram.svg" width="16" height="16" alt="Иконка Инстаграмм">
+              <li class="networks__item">
+                <a class="networks__item-button" href="#">
+                  <img src="img/svg/icon-social/icon-instagram.svg" width="16" height="16" alt="Иконка Инстаграмм">
                 </a>
               </li>
-              <li class="networks-item">
-                <a class="networks-item__button" href="#">
-                  <img src="img/svg/icon-facebook.svg" width="22" height="22" alt="Иконка Фейсбук">
+              <li class="networks__item">
+                <a class="networks__item-button" href="#">
+                  <img src="img/svg/icon-social/icon-facebook.svg" width="22" height="22" alt="Иконка Фейсбук">
                 </a>
               </li>
             </ul>
           </li>
           <li class="footer-social-networks__item footer-developer">
-            <ul class="footer-developer__list">
+            <ul class="footer-developer__list-item">
               <li class="footer-developer__item">
                 <img src="img/svg/html-academy.svg" width="114" height="18" alt="Разработчик HTML-Academy">
               </li>
