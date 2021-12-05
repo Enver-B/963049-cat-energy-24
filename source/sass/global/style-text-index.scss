@@ -1,0 +1,84 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.food-program__intro {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-white;
+}
+
+.food-program__slogan {
+  line-height: 14px;
+  color: $basic-white;
+  text-transform: uppercase;
+}
+
+.slim-food__title,
+.pro-food__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.slim-food__link,
+.pro-food__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic-black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.food-benefits__title,
+.live-example__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $basic-black;
+}
+
+.example-stats__weight,
+.example-stats__time {
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.example-stats__description {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.total-costs__text {
+  line-height: 20px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.live-example__range-before,
+.location__invitation-text {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.live-example__range-before {
+  color: $basic-black;
+}
+
+.location__invitation-text {
+  color: $basic-middle-black;
+}
+
+.location__contact-address {
+  font-style: normal;
+}
+
+.copyright__name {
+  font-size: 16px;
+  color: $basic-dark-gray;
+}

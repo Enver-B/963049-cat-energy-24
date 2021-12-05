@@ -1,0 +1,11 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.nav-list {
+  &__item a {
+    color: $basic-black;
+    text-decoration: none;
+  }
+  list-style: none;
+}
+

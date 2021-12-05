@@ -1,0 +1,11 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.page-header {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $basic-black;
+  background-color: $basic-white;
+  text-transform: uppercase;
+}

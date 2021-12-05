@@ -1,0 +1,10 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.live-example {
+  background-color: $basic-light-gray;
+}
+
+.live-example__wrapper {
+  padding: 25px 0 40px 20px;
+}

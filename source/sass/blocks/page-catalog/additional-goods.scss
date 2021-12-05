@@ -1,0 +1,19 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.additional-goods__gift {
+  position: relative;
+  margin: 0;
+  padding: 36px 20px 10px 20px;
+  background-color: $basic-lime-green;
+}
+
+.additional-goods__gift-icon {
+  position: absolute;
+}
+
+.additional-goods__background-image {
+  position: absolute;
+  top: 0;
+  opacity: 0.15;
+}

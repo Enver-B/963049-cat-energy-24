@@ -1,0 +1,41 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.page-hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $basic-black;
+}
+
+.page-hero__text {
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.field-text {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.radio-text {
+  color: $basic-dark-gray-a;
+}
+
+.contact-title,
+.comment-field__title,
+.additionally-title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $basic-black;
+}
+
+.additionally-text {
+  color: $basic-black;
+}
+
+.program__legend small {
+  line-height: 16px;
+  color: $basic-black;
+}

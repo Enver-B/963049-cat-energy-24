@@ -1,0 +1,31 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.food-program {
+  background-color: $basic-white;
+}
+
+.food-program__wrapper {
+  position: relative;
+}
+
+.food-program__header {
+  position: relative;
+  margin: 0;
+  padding: 27px 35px 164px 36px;
+  background-color: $basic-lime-green;
+}
+
+.food-program__image-cat {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  opacity: 0.15;
+}
+
+.food-program__image-food {
+  position: absolute;
+  top: 167px;
+  left: 20px;
+  z-index: 4;
+}
