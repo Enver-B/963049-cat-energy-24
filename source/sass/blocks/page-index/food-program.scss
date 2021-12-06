@@ -9,10 +9,11 @@
   position: relative;
 }
 
-.food-program__header {
+.food-program__hero {
   position: relative;
+  height: 246px;
   margin: 0;
-  padding: 27px 35px 164px 36px;
+  padding: 27px 35px 29px 36px;
   background-color: $basic-lime-green;
 }
 
@@ -28,4 +29,8 @@
   top: 167px;
   left: 20px;
   z-index: 4;
+}
+
+.food-program__button {
+  margin: 140px 20px 0 20px;
 }

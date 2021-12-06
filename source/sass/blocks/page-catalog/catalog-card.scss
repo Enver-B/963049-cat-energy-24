@@ -8,3 +8,10 @@
 .catalog-card:last-child {
   padding: 25px 20px 25px 20px;
 }
+
+.show-all-button {
+  margin: 0;
+  background-color: $basic-gray;
+  text-transform: uppercase;
+  border-style: none;
+}

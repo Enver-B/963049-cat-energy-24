@@ -14,13 +14,16 @@
   text-transform: uppercase;
 }
 
-.slim-food__title,
-.pro-food__title {
+.food-options-title {
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
   color: $basic-black;
+}
+
+.food-options-text {
+  font-family: "Arial", sans-serif;
 }
 
 .slim-food__link,
@@ -49,6 +52,7 @@
 }
 
 .example-stats__description {
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
 }
@@ -75,6 +79,7 @@
 }
 
 .location__contact-address {
+  font-family: "Arial", sans-serif;
   font-style: normal;
 }
 
