@@ -3,9 +3,24 @@
 
 .additionally {
   margin: 0;
-  padding-bottom: 34px;
+  padding: 0 20px 41px 20px;
+}
+
+.additionally-title {
+  margin: 0;
+  padding-bottom: 39px;
 }
 
 .additionally-list {
+  margin: 0;
   list-style: none;
+}
+
+.additionally-list__item {
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+.additionally-list__item:last-child {
+  padding-bottom: 0;
 }

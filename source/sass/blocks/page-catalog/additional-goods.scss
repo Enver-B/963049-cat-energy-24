@@ -2,18 +2,20 @@
 @import "source/sass/global/colors.scss";
 
 .additional-goods__gift {
-  position: relative;
   margin: 0;
-  padding: 36px 20px 10px 20px;
+  padding: 0;
   background-color: $basic-lime-green;
 }
 
 .additional-goods__gift-icon {
-  position: absolute;
+  padding: 59px 101px 24px 101px;
 }
 
-.additional-goods__background-image {
-  position: absolute;
-  top: 0;
-  opacity: 0.15;
+.additional-goods__gift-text {
+  margin: 0;
+  padding: 24px 61px 43px 58px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
 }

@@ -40,7 +40,7 @@
       <div class="program-page__wrapper">
         <section class="page-hero">
           <div class="page-hero__wrapper">
-            <h2 class="page-hero__title">Подбор программы</h2>
+            <h2 class="page-hero__title main-title-page">Подбор программы</h2>
             <p class="page-hero__text">Заполните анкету, и мы подберем<br>
               программу питания для вашего кота</p>
           </div>
@@ -80,26 +80,28 @@
                 </ul>
               </fieldset>
               <fieldset class="program-form__contact contact">
-                <legend class="contact-title">Контактные данные (владельца кота)</legend>
-                <p class="contact-field">
-                  <label class="contact-field__email field-text" for="mail">e-mail:*</label>
-                  <input class="contact-field__email-input field-text" type="email" id="mail" name="mail" placeholder="kuklachev@gmail.com">
-                  <img class="contact-field__email-icon" src="img/svg/icon-form/icon-email.svg" width="20" height="14" alt="Почтовый конверт">
-                </p>
-                <p class="contact-field">
-                  <label class="contact-field__phone field-text" for="phone">телефон:*</label>
-                  <input class="contact-field__phone-input field-text" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-                  <img class="contact-field__phone-icon" src="img/svg/icon-form/icon-phone.svg" width="20" height="20" alt="Телефонная трубка">
-                </p>
+                <div class="contact__wrapper">
+                  <legend class="contact-title form-subtitle">Контактные данные (владельца кота)</legend>
+                  <p class="contact-field">
+                    <label class="contact-field__email field-text" for="mail">e-mail:*</label>
+                    <input class="contact-field__email-input field-text" type="email" id="mail" name="mail" placeholder="kuklachev@gmail.com">
+                    <img class="contact-field__email-icon" src="img/svg/icon-form/icon-email.svg" width="20" height="14" alt="Почтовый конверт">
+                  </p>
+                  <p class="contact-field">
+                    <label class="contact-field__phone field-text" for="phone">телефон:*</label>
+                    <input class="contact-field__phone-input field-text" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+                    <img class="contact-field__phone-icon" src="img/svg/icon-form/icon-phone.svg" width="20" height="20" alt="Телефонная трубка">
+                  </p>
+                </div>
               </fieldset>
               <fieldset class="program-form__comment comment">
                 <p class="comment-field">
-                  <label class="comment-field__title" for="text-comment">Комментарий</label>
+                  <label class="comment-field__title form-subtitle" for="text-comment">Комментарий</label>
                   <textarea class="comment-field__text field-text" rows="6" cols="25" id="text-comment" name="text-comment" placeholder="Расскажите о всех повадках кота"></textarea>
                 </p>
               </fieldset>
               <fieldset class="program-form__additionally additionally">
-                <legend class="additionally-title">Дополнительно</legend>
+                <legend class="additionally-title form-subtitle">Дополнительно</legend>
                 <ul class="additionally-list">
                   <li class="additionally-list__item">
                     <input class="additionally-list__checkbox-input" type="checkbox" name="sugar" id="sugar" checked>
@@ -119,7 +121,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="program__button button" type="submit">Отправить заявку</button>
+              <button class="program__button button-primary" type="submit">Отправить заявку</button>
               <p class="program__legend">
                 <small>* — Обязательные поля</small>
               </p>

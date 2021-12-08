@@ -5,32 +5,21 @@
   background-color: $basic-white;
 }
 
-.food-program__wrapper {
-  position: relative;
+.food-program__bg {
+  background-color: $basic-lime-green;
 }
 
 .food-program__hero {
   position: relative;
-  height: 246px;
   margin: 0;
-  padding: 27px 35px 29px 36px;
-  background-color: $basic-lime-green;
+  padding: 27px 0 29px 0;
 }
 
-.food-program__image-cat {
-  position: absolute;
-  top: 0;
-  z-index: 3;
-  opacity: 0.15;
-}
-
-.food-program__image-food {
-  position: absolute;
-  top: 167px;
-  left: 20px;
-  z-index: 4;
+.food-program__intro {
+  margin: 27px 35px 25px 36px;
+  color: $basic-white;
 }
 
 .food-program__button {
-  margin: 140px 20px 0 20px;
+  margin: 3px 20px 20px 20px;
 }

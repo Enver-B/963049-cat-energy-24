@@ -39,15 +39,15 @@
       <h1 class="visually-hidden">"Кэт-Энерджи" - уникальный продукт для котов</h1>
       <section class="food-program">
         <div class="food-program__wrapper">
-          <div class="food-program__hero">
-            <h2 class="visually-hidden">Выбрать программу питания "Кэт-Энерджи"</h2>
-            <p class="food-program__intro">Функциональное<br>
-              питание для котов</p>
-            <p class="food-program__slogan">Занялся собой? Займись котом!</p>
-          </div>
-          <div class="food-program__image-wrapper">
-            <img class="food-program__image-cat" src="img/jpg/food-program-background-cat.jpg" width="320" height="302" alt="Фон с изображением кота">
-            <img class="food-program__image-food" src="img/png/food-program-can-mobile.png" width="280" height="270" alt="Изображение питания для кота">
+          <div class="food-program__bg">
+            <div class="food-program__hero">
+              <h2 class="food-program__intro main-title-page">Функциональное<br>
+                питание для котов</h2>
+              <p class="food-program__slogan">Занялся собой? Займись котом!</p>
+            </div>
+            <div class="food-program__image-wrapper">
+              <img class="food-program__image-food" src="img/png/food-program-can-mobile.png" width="280" height="270" alt="Изображение питания для кота">
+            </div>
           </div>
           <a class="food-program__button button-primary" href="form.html">Подобрать программу</a>
         </div>
@@ -56,31 +56,31 @@
         <h2 class="visually-hidden">Цели программы питания Кэт-Энерджи</h2>
         <div class="healthy-food__wrapper">
           <ul class="healthy-food-list">
-            <li class="healthy-food-list__item slim-food">
-              <div class="slim-food__wrapper">
-                <img class="slim-food__icon" src="img/svg/icon-cat/cat-icon-slim-mobile.svg" width="50" height="53" alt="Иконка стройного Кота">
-                <h3 class="slim-food__title food-options-title">Похудение</h3>
-                <p class="slim-food__text food-options-text">Ваш кот весит больше собаки и<br>
+            <li class="healthy-food-list__item options-foods">
+              <div class="options-foods__wrapper">
+                <img class="options-foods__icon-slim" src="img/svg/icon-cat/cat-icon-slim-mobile.svg" width="50" height="53" alt="Иконка стройного Кота">
+                <h3 class="options-foods__title food-options-title">Похудение</h3>
+                <p class="options-foods__text food-options-text">Ваш кот весит больше собаки и<br>
                   почти утратил способность лазить<br>
                   по деревьям? Пора на диету! Cat<br>
                   Energy Slim поможет вашему<br>
                   питомцу сбросить лишний вес.</p>
-                <a class="slim-food__link" href="catalog.html">Каталог Slim
-                  <img class="slim-food__link-icon" src="img/svg/arrow.svg" width="32" height="10" alt="Стрелка-ссылка">
+                <a class="options-foods__link food-goods-title" href="catalog.html">Каталог Slim
+                  <img class="options-foods__link-icon" src="img/svg/arrow.svg" width="32" height="10" alt="Стрелка-ссылка">
                 </a>
               </div>
             </li>
-            <li class="healthy-food-list__item pro-food">
-              <div class="pro-food__wrapper">
-                <img class="pro-food__icon" src="img/svg/icon-cat/cat-icon-bro-mobile.svg" width="67" height="50" alt="Иконка массивного Кота">
-                <h3 class="pro-food__title food-options-title">Набор массы</h3>
-                <p class="pro-food__text food-options-text">Заработать авторитет среди<br>
+            <li class="healthy-food-list__item options-foods">
+              <div class="options-foods__wrapper">
+                <img class="options-foods__icon-pro" src="img/svg/icon-cat/cat-icon-bro-mobile.svg" width="67" height="50" alt="Иконка массивного Кота">
+                <h3 class="options-foods__title food-options-title">Набор массы</h3>
+                <p class="options-foods__text food-options-text">Заработать авторитет среди<br>
                   дворовых котов и даже собак<br>
                   Серия Cat Energy Pro поможет<br>
                   вашему коту нарастить<br>
                   необходимые мышцы!</p>
-                <a class="pro-food__link" href="catalog.html">Каталог Pro
-                  <img class="pro-food__link-icon" src="img/svg/arrow.svg" width="32" height="10" alt="Стрелка-ссылка">
+                <a class="options-foods__link food-goods-title" href="catalog.html">Каталог Pro
+                  <img class="options-foods__link-icon" src="img/svg/arrow.svg" width="32" height="10" alt="Стрелка-ссылка">
                 </a>
               </div>
             </li>
@@ -90,7 +90,7 @@
       <section class="food-benefits">
         <h2 class="visually-hidden">Преимущества питания программы Кэт-Энерджи</h2>
         <div class="food-benefits__wrapper">
-          <h2 class="food-benefits__title">
+          <h2 class="food-benefits__title benefits-example-title">
             Как это работает
           </h2>
           <ul class="food-benefits-list">
@@ -132,7 +132,7 @@
       <section class="live-example">
         <h2 class="visually-hidden">Живой пример программы питания</h2>
         <div class="live-example__wrapper">
-          <h2 class="live-example__title">Живой пример</h2>
+          <h2 class="live-example__title benefits-example-title">Живой пример</h2>
           <p class="live-example__text food-options-text">Борис сбросил 5 кг за 2 месяца, просто<br>
             заменив свой обычный корм на Cat Energy<br>
             Slim. Отличный результат без изнуряющих<br>
@@ -142,12 +142,12 @@
           <div class="live-example__stats">
             <dl class="example-stats">
               <div class="example-stats__item">
-                <dt class="example-stats__weight">5 кг</dt>
+                <dt class="example-stats__weight stats-goods-text">5 кг</dt>
                 <dd class="example-stats__description">снижение<br>
                   веса</dd>
               </div>
               <div class="example-stats__item">
-                <dt class="example-stats__time">60 дней</dt>
+                <dt class="example-stats__time stats-goods-text">60 дней</dt>
                 <dd class="example-stats__description">затрачено<br>
                   времени</dd>
               </div>
@@ -158,7 +158,7 @@
           </div>
           <img class="live-example__image" src="img/png/live-example-mobile.png" width="280" height="232" alt="Живой пример сброса веса">
           <div class="live-example__range">
-            <label class="live-example__range-before">
+            <label class="live-example__range-before card-caption">
               было <input type="range" name="change"> стало
             </label>
           </div>
@@ -170,7 +170,7 @@
         <h2 class="visually-hidden">Локация и адрес местонаходения</h2>
         <div class="location__wrapper">
           <div class="location__invitation">
-            <p class="location__invitation-text">Приглашаем<br>
+            <p class="location__invitation-text range-invitation-text">Приглашаем<br>
               к сотрудничеству<br>
               дилеров!</p>
           </div>

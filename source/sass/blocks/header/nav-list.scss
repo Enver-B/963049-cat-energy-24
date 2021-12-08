@@ -4,8 +4,14 @@
 .nav-list {
   &__item a {
     font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
     color: $basic-black;
     text-decoration: none;
   }
   list-style: none;
+}
+
+.nav-list__item {
+  padding: 22px 0 24px 0;
 }

@@ -1,13 +1,6 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
 
-.page-hero__title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: $basic-black;
-}
-
 .page-hero__text {
   color: $basic-black;
   text-transform: uppercase;
@@ -22,9 +15,7 @@
   color: $basic-dark-gray-a;
 }
 
-.contact-title,
-.comment-field__title,
-.additionally-title {
+.form-subtitle {
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -36,6 +27,7 @@
 }
 
 .program__legend small {
+  margin: 0 82px 0 81px;
   font-family: "Arial", sans-serif;
   line-height: 16px;
   color: $basic-black;

@@ -1,14 +1,8 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
 
-.food-program__intro {
-  margin: 0;
-  font-size: 36px;
-  line-height: 36px;
-  color: $basic-white;
-}
-
 .food-program__slogan {
+  margin: 0 60px 0 62px;
   line-height: 14px;
   color: $basic-white;
   text-transform: uppercase;
@@ -26,47 +20,23 @@
   font-family: "Arial", sans-serif;
 }
 
-.slim-food__link,
-.pro-food__link {
-  font-size: 16px;
-  line-height: 16px;
-  color: $basic-black;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.food-benefits__title,
-.live-example__title {
+.benefits-example-title {
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   color: $basic-black;
 }
 
-.example-stats__weight,
-.example-stats__time {
-  font-size: 24px;
-  line-height: 24px;
-  color: $basic-black;
-  text-transform: uppercase;
-}
-
 .example-stats__description {
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
+  color: $basic-dark-gray;
 }
 
 .total-costs__text {
   line-height: 20px;
   color: $basic-black;
-  text-transform: uppercase;
-}
-
-.live-example__range-before,
-.location__invitation-text {
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
 }
 

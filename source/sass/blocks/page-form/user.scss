@@ -4,3 +4,12 @@
 .user {
   padding: 0 20px 27px 20px;
 }
+
+.user-field {
+  margin: 0;
+  padding-bottom: 14px;
+}
+
+.user-field:last-child {
+  padding-bottom: 0;
+}

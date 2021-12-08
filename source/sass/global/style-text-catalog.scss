@@ -1,22 +1,6 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
 
-.catalog__title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: $basic-black;
-}
-
-.card-content__title,
-.card-content__other-title {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: $basic-dark-gray-a;
-  text-transform: uppercase;
-}
-
 .card-text {
   font-family: "Arial", sans-serif;
   font-size: 12px;
@@ -27,31 +11,16 @@
   color: $basic-middle-black;
 }
 
-.goods-cards-title {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $basic-black;
-}
-
 .goods-card__title {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
+  margin: 0;
+  padding: 13px 0;
   color: $basic-dark-gray-a;
 }
 
 .goods-card__text {
+  margin: 0;
+  padding-bottom: 15px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
-  color: $basic-dark-gray-a;
-}
-
-.additional-goods__gift-text {
-  font-family: "Arial", sans-serif;
-  padding-top: 150px;
-  font-size: 16px;
-  line-height: 20px;
-  color: $basic-white;
 }
