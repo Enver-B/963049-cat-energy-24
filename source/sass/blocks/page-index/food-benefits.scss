@@ -1,12 +1,29 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
 
+.food-benefits {
+  padding-bottom: 29px;
+}
+
 .food-benefits__wrapper {
   margin: 0;
   padding: 20px;
 }
 
 .food-benefits-list {
+  margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.food-benefits-list__item {
+  padding-bottom: 20px;
+}
+
+.food-benefits-list__item:last-child {
+  padding-bottom: 0;
+}
+
+.benefits-content__text {
+  margin: 0;
 }

@@ -1,6 +1,10 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
 
+.page-footer {
+  padding: 26px 0 0 0;
+}
+
 .footer-form {
   background-color: $basic-gray;
 }
