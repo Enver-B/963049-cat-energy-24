@@ -1,0 +1,22 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.options-foods__wrapper {
+  padding: 21px 20px 18px 19px;
+  background-color: $basic-gray;
+}
+
+.options-foods__title {
+  margin: 0;
+  padding: 21px 0 22px 0;
+}
+
+.options-foods__text {
+  margin: 0 0 23px 0;
+}
+
+.options-foods__link {
+  margin: 19px 0 22px 0;
+  color: $basic-black;
+  text-decoration: none;
+}

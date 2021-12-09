@@ -1,0 +1,20 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.contact__wrapper {
+  margin: 0;
+  padding: 26px 20px 23px 20px;
+}
+
+.contact-title {
+  padding-bottom: 35px;
+}
+
+.contact-field {
+  margin: 0;
+  padding-bottom: 14px;
+}
+
+.contact-field:last-child {
+  padding-bottom: 0;
+}

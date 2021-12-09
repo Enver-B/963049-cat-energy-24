@@ -1,0 +1,13 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.button-primary {
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  color: $basic-white;
+  background-color: $basic-lime-green;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-style: none;
+}

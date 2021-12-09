@@ -1,0 +1,21 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.additional-goods__gift {
+  margin: 0;
+  padding: 0;
+  background-color: $basic-lime-green;
+}
+
+.additional-goods__gift-icon {
+  padding: 59px 101px 24px 101px;
+}
+
+.additional-goods__gift-text {
+  margin: 0;
+  padding: 24px 61px 43px 58px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+}

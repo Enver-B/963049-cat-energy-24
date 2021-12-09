@@ -1,0 +1,21 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.card-content__title {
+  margin: 0;
+  padding: 11px 0 14px 0;
+  color: $basic-dark-gray-a;
+}
+
+.card-content__wrapper {
+  margin: 0;
+  padding-bottom: 22px;
+}
+
+.card-content__description-list {
+  margin: 0;
+}
+
+.card-content__description {
+  margin: 0;
+}

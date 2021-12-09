@@ -1,0 +1,25 @@
+@import "source/sass/global/fonts.scss";
+@import "source/sass/global/colors.scss";
+
+.food-program {
+  background-color: $basic-white;
+}
+
+.food-program__bg {
+  background-color: $basic-lime-green;
+}
+
+.food-program__hero {
+  position: relative;
+  margin: 0;
+  padding: 27px 0 29px 0;
+}
+
+.food-program__intro {
+  margin: 27px 35px 25px 36px;
+  color: $basic-white;
+}
+
+.food-program__button-wrapper {
+  padding: 3px 20px 20px 20px;
+}
