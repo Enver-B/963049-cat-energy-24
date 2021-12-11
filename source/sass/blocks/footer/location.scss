@@ -1,9 +1,20 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .location__wrapper {
   margin: 0;
   padding: 0 20px 26px 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .location__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 70px 56px 70px;
+  }
 }
 
 .location__invitation {

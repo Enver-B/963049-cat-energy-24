@@ -1,5 +1,6 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .food-benefits {
   padding-bottom: 29px;
@@ -14,6 +15,27 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .food-benefits-list {
+    display: grid;
+    grid-template-rows: repeat(2, 280px);
+    grid-template-columns: repeat(2, 230px);
+    row-gap: 37px;
+    column-gap: 154px;
+    padding: 0 109px 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-benefits-list {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 246px);
+    column-gap: 94px;
+    padding: 0 110px 0 110px;
+  }
 }
 
 .food-benefits-list__item {

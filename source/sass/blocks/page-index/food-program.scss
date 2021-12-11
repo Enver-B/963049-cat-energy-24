@@ -1,5 +1,6 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .food-program {
   background-color: $basic-white;
@@ -7,6 +8,27 @@
 
 .food-program__bg {
   background-color: $basic-lime-green;
+}
+
+@media (min-width: $tablet-width) {
+  .food-program__bg {
+    padding: 0 30px;
+    background-color: $basic-white;
+  }
+
+  .food-program__intro {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-program__bg {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 330px 0 190px;
+  }
 }
 
 .food-program__hero {

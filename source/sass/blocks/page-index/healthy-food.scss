@@ -1,5 +1,24 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
+
+@media (min-width: $tablet-width) {
+  .healthy-food__wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .healthy-food__wrapper {
+    padding: 0 110px;
+  }
+
+  .healthy-food-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
 
 .healthy-food-list {
   margin: 0;
