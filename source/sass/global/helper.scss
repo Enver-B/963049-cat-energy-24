@@ -15,22 +15,21 @@
   overflow: hidden;
 }
 
-.page-main__container {
+.container {
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
-  .page-main__container {
-    margin: 0 auto;
+  .container {
     padding: 0 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__container {
-    margin: 0 auto;
-    padding: 0 110px;
+  .container {
+    max-width: 1220px;
   }
 }
 
