@@ -5,7 +5,9 @@
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: auto;
+    padding: 24px 30px 24px 30px;
   }
 
   .page-header__logo-wrapper {

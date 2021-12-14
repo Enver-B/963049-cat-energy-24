@@ -3,6 +3,7 @@
 @import "source/sass/global/viewports.scss";
 
 .live-example {
+  margin: 0 -20px;
   background-color: $basic-light-gray;
 }
 
@@ -15,10 +16,6 @@
     background-color: $basic-white;
   }
 
-  .live-example__wrapper {
-    padding: 43px 30px 56px 30px;
-  }
-
   .live-example__range {
     background-color: $basic-light-gray;
   }
@@ -26,15 +23,20 @@
 
 @media (min-width: $desktop-width) {
   .live-example__title {
-    padding: 0 110px 0 110px;
+    padding: 0 110px;
     background-color: $basic-white;
   }
 
   .live-example__wrapper {
+    margin: 0 -110px;
+    padding: 0 0 75px 0;
+  }
+
+  .live-example__bg {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 110px 75px 110px;
     background-color: $basic-light-gray;
+    padding: 0 110px;
   }
 }
 
