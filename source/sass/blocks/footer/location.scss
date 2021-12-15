@@ -3,8 +3,12 @@
 @import "source/sass/global/viewports.scss";
 
 .location__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 0 20px 26px 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 
