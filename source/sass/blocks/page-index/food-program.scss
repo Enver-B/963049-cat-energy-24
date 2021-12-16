@@ -11,8 +11,7 @@
 }
 
 .food-program__bg {
-  margin: 0 -20px;
-  padding: 0 20px;
+  margin: 0;
   background-color: $basic-lime-green;
 }
 
@@ -22,7 +21,8 @@
 }
 
 .food-program__button-wrapper {
-  padding: 3px 0 20px 0;
+  padding-top: 3px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {

@@ -13,19 +13,22 @@
 
 .page-header__wrapper {
   margin: 0 auto;
-  padding: 10px 20px 18px 20px;
-  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  width: auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
-    padding: 24px 30px 32px 30px;
+    padding-top: 24px;
+    padding-bottom: 32px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    padding: 69px 110px 32px 110px;
+    padding-top: 69px;
+    padding-bottom: 32px;
     width: 1220px;
   }
 }
