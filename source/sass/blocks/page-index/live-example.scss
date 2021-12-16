@@ -1,12 +1,36 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .live-example {
   background-color: $basic-light-gray;
 }
 
 .live-example__wrapper {
-  padding: 25px 20px 40px 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .live-example__range {
+    background-color: $basic-light-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live-example__title {
+    background-color: $basic-white;
+  }
+
+  .live-example__wrapper {
+    padding: 0 0 70px 0;
+  }
+
+  .live-example__bg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $basic-light-gray;
+  }
 }
 
 .live-example__text {

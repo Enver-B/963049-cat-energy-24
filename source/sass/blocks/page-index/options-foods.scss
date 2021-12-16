@@ -1,14 +1,33 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .options-foods__wrapper {
-  padding: 21px 20px 18px 19px;
+  padding: 0;
   background-color: $basic-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .options-foods__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options-foods__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 .options-foods__title {
   margin: 0;
-  padding: 21px 0 22px 0;
+  padding: 0;
 }
 
 .options-foods__text {

@@ -1,2 +1,48 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .page-header__logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 134px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    width: 1220px;
+  }
+
+  .page-header__logo-wrapper {
+    width: 202px;
+  }
+}
+
+.page-header__logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 11px 20px 20px 20px;
+}
+
+.page-header__toggle--hide {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+}

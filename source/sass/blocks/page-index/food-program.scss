@@ -1,18 +1,18 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .food-program {
   background-color: $basic-white;
 }
 
-.food-program__bg {
-  background-color: $basic-lime-green;
+.food-program__wrapper {
+  margin: auto;
 }
 
-.food-program__hero {
-  position: relative;
+.food-program__bg {
   margin: 0;
-  padding: 27px 0 29px 0;
+  background-color: $basic-lime-green;
 }
 
 .food-program__intro {
@@ -21,5 +21,49 @@
 }
 
 .food-program__button-wrapper {
-  padding: 3px 20px 20px 20px;
+  padding-top: 3px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .food-program__bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $basic-white;
+  }
+
+  .food-program__intro {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+  }
+
+  .food-program__button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-program__bg {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0;
+  }
+
+  .food-program__image-wrapper {
+    background-color: $basic-lime-green;
+  }
+
+  .food-program__button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 330px 0 190px;
+  }
+}
+
+.food-program__hero {
+  margin: 0;
+  padding: 27px 0 29px 0;
 }

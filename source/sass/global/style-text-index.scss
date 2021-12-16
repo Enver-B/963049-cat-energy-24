@@ -1,11 +1,20 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .food-program__slogan {
   margin: 0 60px 0 62px;
   line-height: 14px;
   color: $basic-white;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .food-program__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+  }
 }
 
 .food-options-title {

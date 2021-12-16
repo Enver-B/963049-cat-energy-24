@@ -1,16 +1,38 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .page-footer {
-  padding: 26px 0 0 0;
+  padding: 0;
 }
 
 .footer-form {
   background-color: $basic-gray;
 }
 
-.page-footer__wrapper {
-  margin: 0;
-  padding: 39px 20px 22px 19px;
+.page-footer__connections {
   background-color: $basic-gray;
+}
+
+.page-footer__wrapper {
+  padding-top: 39px;
+  padding-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 58px 0 55px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 57px 0 58px 0;
+  }
 }
