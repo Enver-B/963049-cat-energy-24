@@ -1,5 +1,6 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .page-hero__text {
   color: $basic-black;
@@ -27,8 +28,20 @@
 }
 
 .program__legend small {
-  margin: 0 82px 0 81px;
+  margin: 0;
   font-family: "Arial", sans-serif;
   line-height: 16px;
   color: $basic-black;
+}
+
+@media (min-width: $tablet-width) {
+  .field-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-subtitle {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

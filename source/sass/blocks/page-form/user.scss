@@ -1,8 +1,14 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .user {
-  padding: 0 20px 27px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 5px 0 27px 0;
 }
 
 .user-field {

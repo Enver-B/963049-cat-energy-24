@@ -1,11 +1,33 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .comment {
   margin: 0;
-  padding: 23px 21px 23px 20px;
+  padding: 23px 0 23px 0;
 }
 
 .comment-field {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0;
+}
+
+.comment-field__title {
+  margin-bottom: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .comment-field__title {
+    margin-bottom: 70px;
+  }
+
+  .comment-field__text {
+    padding-top: 6px;
+  }
+
+  .comment-field {
+    padding: 0 40px 65px 37px;
+  }
 }

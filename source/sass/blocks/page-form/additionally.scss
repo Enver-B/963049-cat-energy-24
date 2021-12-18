@@ -1,9 +1,10 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .additionally {
   margin: 0;
-  padding: 0 20px 41px 20px;
+  padding: 0 0 41px 0;
 }
 
 .additionally-title {
@@ -12,7 +13,10 @@
 }
 
 .additionally-list {
+  display: grid;
+  grid-template-columns: 1fr;
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -23,4 +27,18 @@
 
 .additionally-list__item:last-child {
   padding-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .additionally-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

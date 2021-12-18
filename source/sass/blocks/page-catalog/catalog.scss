@@ -1,13 +1,44 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .catalog__title {
   margin: 0;
-  padding: 27px 42px 41px 20px;
+  padding: 27px 0 41px 0;
 }
 
 .catalog-list {
+  display: grid;
+  grid-template-rows: repeat(8, 190px);
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 82px 0 75px 0;
+  }
+
+  .catalog-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__title {
+    padding: 74px 0 84px 0;
+  }
+
+  .catalog-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 62px 80px;
+  }
 }

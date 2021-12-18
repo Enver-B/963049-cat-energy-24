@@ -1,8 +1,14 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .page-hero__wrapper {
-  padding: 27px 41px 39px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 27px;
+  padding-bottom: 39px;
 }
 
 .page-hero__title {
@@ -12,4 +18,16 @@
 
 .page-hero__text {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-hero__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .page-hero__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
