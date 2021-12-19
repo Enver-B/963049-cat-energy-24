@@ -1,16 +1,15 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
-.goods-cards {
-  padding: 25px 20px 19px 20px;
-}
-
-.goods-cards-title {
+.additional-goods__title {
   margin: 0;
   padding-bottom: 36px;
 }
 
-.goods-cards-list {
-  margin: 0;
-  padding: 0;
+@media (min-width: $tablet-width) {
+  .additional-goods__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

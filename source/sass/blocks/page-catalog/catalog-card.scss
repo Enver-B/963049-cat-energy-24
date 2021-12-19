@@ -1,12 +1,40 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .catalog-card {
-  padding: 8px 20px 25px 20px;
+  padding: 8px 0 25px 0;
 }
 
 .catalog-card:last-child {
-  padding: 25px 20px 25px 20px;
+  padding: 25px 0 25px 0;
+}
+
+.catalog-card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.catalog-card__bg {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-card__other {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .card-content__other-title {

@@ -1,5 +1,26 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
+
+.additional-goods__wrapper {
+  padding-top: 25px;
+  padding-bottom: 19px;
+}
+
+.additional-goods__bg {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods__bg {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr;
+  }
+}
 
 .additional-goods__gift {
   margin: 0;

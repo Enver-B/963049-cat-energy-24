@@ -1,9 +1,10 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .contact__wrapper {
   margin: 0;
-  padding: 26px 20px 23px 20px;
+  padding: 26px 0 23px 0;
 }
 
 .contact-title {
@@ -17,4 +18,27 @@
 
 .contact-field:last-child {
   padding-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contact__wrapper {
+    padding: 0;
+  }
+
+  .contact-bg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-bg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 76px 0 69px 0;
+  }
 }

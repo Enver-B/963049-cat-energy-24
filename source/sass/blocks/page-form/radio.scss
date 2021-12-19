@@ -1,9 +1,13 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .radio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0;
-  padding: 22px 24px 20px 20px;
+  padding: 24px 0 20px 0;
 }
 
 .radio-list {
@@ -18,4 +22,10 @@
 
 .radio-list__item:last-child {
   padding-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .radio {
+    padding: 25px 0 25px 28px;
+  }
 }
