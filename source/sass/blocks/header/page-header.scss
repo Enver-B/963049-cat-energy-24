@@ -14,21 +14,22 @@
 .page-header__wrapper {
   margin: 0 auto;
   padding-top: 10px;
-  padding-bottom: 18px;
   width: auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
-    padding-top: 24px;
-    padding-bottom: 32px;
+    padding: 24px 30px 32px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green 50%);
+  }
+
   .page-header__wrapper {
-    padding-top: 69px;
-    padding-bottom: 32px;
-    width: 1220px;
+    padding: 0;
+    max-width: 1220px;
   }
 }

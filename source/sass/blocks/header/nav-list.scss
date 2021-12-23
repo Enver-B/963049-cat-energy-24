@@ -3,16 +3,23 @@
 @import "source/sass/global/viewports.scss";
 
 .nav-list {
+  &__item {
+    padding: 22px 0 24px 0;
+    border-top: 1px solid $basic-light-gray-b;
+  }
+
   &__item a {
+    display: block;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
+    text-align: center;
     color: $basic-black;
     text-decoration: none;
   }
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
   margin: 0;
   list-style: none;
@@ -20,6 +27,16 @@
 
 @media (min-width: $tablet-width) {
   .nav-list {
+    &__item {
+      border-top: none;
+    }
+
+    &__item a {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,11 +47,18 @@
 
 @media (min-width: $desktop-width) {
   .nav-list {
-    width: 478px;
-    background-color: $basic-lime-green;
-  }
-}
+    &__item {
+      padding: 0;
+    }
 
-.nav-list__item {
-  padding: 22px 0 24px 0;
+    &__item a {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $basic-white;
+    }
+
+    padding: 69px 0 32px 132px;
+    width: 478px;
+  }
 }

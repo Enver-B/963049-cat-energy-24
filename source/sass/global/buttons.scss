@@ -1,5 +1,6 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .button-primary {
   display: inline-block;
@@ -10,4 +11,5 @@
   text-transform: uppercase;
   text-decoration: none;
   border-style: none;
+  cursor: pointer;
 }

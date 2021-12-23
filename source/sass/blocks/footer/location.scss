@@ -11,19 +11,15 @@
   padding-bottom: 26px;
 }
 
-
-@media (min-width: $tablet-width) {
-  .location__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 40px 56px 40px;
-  }
-}
-
 .location__wrapper-map {
+  position: relative;
   padding: 0;
   margin: 0 -20px;
+}
+
+.location__wrapper-map iframe {
+  display: block;
+  border: none;
 }
 
 .location__invitation {
@@ -32,4 +28,60 @@
 
 .location__invitation-text {
   margin: 0;
+  color: $basic-middle-black;
+}
+
+@media (min-width: $tablet-width) {
+  .location__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 40px 56px 40px;
+  }
+
+  .location__invitation-text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .location__contact-address {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__bg {
+    position: relative;
+    top: 95px;
+    display: inline-block;
+    width: auto;
+    padding: 56px 80px;
+    background-color: $basic-white;
+    z-index: 3;
+  }
+
+  .location__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .location__invitation-text {
+    margin: 0 87px 0 0;
+  }
+
+  .location__wrapper-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-size: 100%;
+    cursor: pointer;
+  }
+
+  .page-footer__connections {
+    margin-top: 260px;
+  }
 }
