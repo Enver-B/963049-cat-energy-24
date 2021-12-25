@@ -1,2 +1,31 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
+
+.benefits-content__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.benefits-content__text {
+  margin: 0 0 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits-content__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .benefits-content__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 31px 0 0 0;
+  }
+}

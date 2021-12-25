@@ -3,39 +3,83 @@
 @import "source/sass/global/viewports.scss";
 
 .options-foods__wrapper {
-  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  grid-template-areas:
+    "op__is op__t"
+    "op__tx op__tx"
+    "op__tx op__tx"
+    "op__li op__li";
+  padding: 21px 20px 18px 19px;
   background-color: $basic-gray;
 }
 
-@media (min-width: $tablet-width) {
-  .options-foods__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .options-foods__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-}
-
 .options-foods__title {
+  display: inline-block;
+  grid-area: op__t;
   margin: 0;
   padding: 0;
 }
 
 .options-foods__text {
-  margin: 0 0 23px 0;
+  grid-area: op__tx;
+  margin: 25px 0 23px 0;
 }
 
 .options-foods__link {
-  margin: 19px 0 22px 0;
+  grid-area: op__li;
+  padding: 19px 0 22px 0;
   color: $basic-black;
   text-decoration: none;
+  border-top: 1px solid $basic-light-gray-c;
+}
+
+.options-foods__icon-slim {
+  grid-area: op__is;
+}
+
+@media (min-width: $tablet-width) {
+  .options-foods__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+      "op__t op__is"
+      "op__tx op__is"
+      "op__li op__is";
+    padding: 77px 62px 53px 52px;
+  }
+
+  .options-foods__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .options-foods__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  .options-foods__link {
+    font-size: 20px;
+    line-height: 30px;
+    border-top: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options-foods__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    align-items: center;
+    grid-template-areas:
+      "op__is op__t"
+      "op__tx op__tx"
+      "op__li op__li";
+    padding: 41px 51px 55px 52px;
+  }
 }

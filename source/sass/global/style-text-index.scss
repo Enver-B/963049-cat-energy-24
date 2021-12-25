@@ -38,7 +38,6 @@
 }
 
 .example-stats__description {
-  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
@@ -55,13 +54,10 @@
   color: $basic-black;
 }
 
-.location__invitation-text {
-  color: $basic-middle-black;
-}
-
 .location__contact-address {
   font-family: "Arial", sans-serif;
   font-style: normal;
+  line-height: 20px;
 }
 
 .copyright__name {
