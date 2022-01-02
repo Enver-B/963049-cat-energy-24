@@ -1,5 +1,6 @@
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/colors.scss";
+@import "source/sass/global/viewports.scss";
 
 .card-text {
   font-family: "Arial", sans-serif;
@@ -23,4 +24,14 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .card-text {
+    font-size: 16px;
+  }
+
+  .goods-card__text {
+    padding: 0;
+  }
 }

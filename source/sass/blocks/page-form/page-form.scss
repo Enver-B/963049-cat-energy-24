@@ -6,3 +6,10 @@
   margin: 0;
   padding-bottom: 34px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-form {
+    margin: 0;
+    padding-bottom: 51px;
+  }
+}

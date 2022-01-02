@@ -3,19 +3,33 @@
 @import "source/sass/global/viewports.scss";
 
 .additionally {
+  position: relative;
   margin: 0;
   padding: 0 0 41px 0;
+  border: none;
+}
+
+.additionally::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 1px;
+  background-color: $basic-lime-green;
 }
 
 .additionally-title {
-  margin: 0;
-  padding-bottom: 39px;
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 -20px;
+  padding: 23px 23px 39px 20px;
+  background-color: $basic-white;
 }
 
 .additionally-list {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0;
+  margin: 0 0 0 46px;
   padding: 0;
   list-style: none;
 }
@@ -29,10 +43,52 @@
   padding-bottom: 0;
 }
 
+.additionally-text {
+  position: relative;
+}
+
+.additionally-list__checkbox-input + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -46px;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../../img/svg/checkbox/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.additionally-list__checkbox-input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -40px;
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 14px;
+  background-image: url("../../../img/svg/checkbox/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 @media (min-width: $tablet-width) {
+  .additionally {
+    padding: 0 0 30px 0;
+  }
+
+  .additionally-title {
+    margin: 0;
+    padding: 23px 40px 39px 41px;
+  }
+
   .additionally-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 40px;
   }
 }
 
@@ -40,5 +96,6 @@
   .additionally-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin: 0;
   }
 }

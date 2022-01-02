@@ -2,12 +2,28 @@
 @import "source/sass/global/colors.scss";
 @import "source/sass/global/viewports.scss";
 
-.program-form fieldset {
-  border: none;
+.program-form__additionally-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.page-form__button {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-form__button-wrapper {
+  margin: 0;
+  padding: 0;
 }
 
 .program__button {
+  display: block;
   margin: 0 0 21px 0;
+  padding: 7px 0;
+  width: 100%;
 }
 
 .program__legend {
@@ -15,8 +31,34 @@
 }
 
 @media (min-width: $tablet-width) {
+  .program-form__additionally-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
   .program-form__user-wrapper {
     padding: 66px 0 75px 0;
+  }
+
+  .page-form__button-wrapper {
+    margin: 0 61px 0 0;
+  }
+
+  .page-form__button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0 70px;
+  }
+
+  .program__button {
+    display: block;
+    margin: 0 0 21px 0;
+    padding: 13px 35px;
+    font-size: 20px;
   }
 }
 
@@ -24,6 +66,15 @@
   .program-form__user-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    margin: 0 auto;
     padding: 66px 0 69px 0;
+    max-width: 1220px;
+  }
+
+  .page-form__button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
   }
 }

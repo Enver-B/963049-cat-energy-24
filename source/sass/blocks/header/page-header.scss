@@ -17,15 +17,27 @@
   width: auto;
 }
 
+.page-header--in {
+  border-bottom: 1px solid $basic-light-gray-c;
+}
+
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     padding: 24px 30px 32px 30px;
+  }
+
+  .page-header--in {
+    border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green 50%);
+  }
+
+  .page-header--in {
+    background: $basic-white;
   }
 
   .page-header__wrapper {
