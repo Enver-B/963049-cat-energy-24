@@ -21,18 +21,6 @@
   width: auto;
 }
 
-@media (min-width: $tablet-width) {
-  .container {
-    padding: 0 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    max-width: 1220px;
-  }
-}
-
 .main-title-page {
   font-size: 36px;
   line-height: 36px;
@@ -59,4 +47,22 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .card-caption {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding: 0;
+    max-width: 1220px;
+  }
 }

@@ -3,8 +3,19 @@
 @import "source/sass/global/viewports.scss";
 
 .comment {
+  position: relative;
   margin: 0;
   padding: 23px 0 23px 0;
+  border: none;
+}
+
+.comment::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 1px;
+  background-color: $basic-lime-green;
 }
 
 .comment-field {
@@ -15,12 +26,28 @@
 }
 
 .comment-field__title {
-  margin-bottom: 38px;
+  position: relative;
+  display: inline-block;
+  margin: 0 0 15px -20px;
+  padding: 23px 22px 23px 20px;
+  background-color: $basic-white;
+}
+
+.comment-field textarea {
+  display: inline-block;
+  margin: 0;
+  padding: 9px 12px 9px 15px;
+  vertical-align: baseline;
+  height: 150px;
+  border-radius: 0;
+  border: 1px solid $basic-light-gray-d;
+  resize: none;
 }
 
 @media (min-width: $tablet-width) {
   .comment-field__title {
-    margin-bottom: 70px;
+    margin: 0 0 53px 0;
+    padding: 23px 38px 23px 39px;
   }
 
   .comment-field__text {
@@ -29,5 +56,19 @@
 
   .comment-field {
     padding: 0 40px 65px 37px;
+  }
+
+  .comment-field textarea {
+    height: 174px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment-field__title {
+    padding: 23px 40px 23px 40px;
+  }
+
+  .comment-field {
+    padding: 0 0 67px 0;
   }
 }

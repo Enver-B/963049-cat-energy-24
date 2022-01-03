@@ -2,18 +2,70 @@
 @import "source/sass/global/colors.scss";
 @import "source/sass/global/viewports.scss";
 
-.contact__wrapper {
+.contact {
+  position: relative;
   margin: 0;
-  padding: 26px 0 23px 0;
+  padding: 0 0 23px 0;
+  border: none;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 1px;
+  background-color: $basic-lime-green;
 }
 
 .contact-title {
-  padding-bottom: 35px;
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 -20px;
+  padding: 26px 14px 35px 20px;
+  background-color: $basic-white;
+}
+
+.contact-bg {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .contact-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding-bottom: 14px;
+}
+
+.contact-field label {
+  display: block;
+  margin-right: 8px;
+}
+
+.contact-field input {
+  display: block;
+  flex-grow: 1;
+  width: 100%;
+  margin: 0;
+  padding: 13px 51px 15px 15px;
+  border-radius: 0;
+  border: 1px solid $basic-light-gray-d;
+}
+
+.contact-field__email-input {
+  background-image: url("../../../img/svg/icon-form/icon-email.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.contact-field__phone-input {
+  background-image: url("../../../img/svg/icon-form/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 }
 
 .contact-field:last-child {
@@ -21,8 +73,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contact__wrapper {
-    padding: 0;
+  .contact {
+    padding: 0 0 65px 0;
+  }
+
+  .contact::before {
+    top: 20px;
   }
 
   .contact-bg {
@@ -30,15 +86,40 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 0 36px 0 38px;
+  }
+
+  .contact-title {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 42px 86px 39px;
+    background-color: $basic-white;
+    z-index: 5;
+  }
+
+  .contact-field {
+    padding-bottom: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contact {
+    padding: 0;
+  }
+
   .contact-bg {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 78px;
     padding: 76px 0 69px 0;
+  }
+
+  .contact-title {
+    padding: 0 42px 0 39px;
+  }
+
+  .contact-field {
+    padding-bottom: 0;
   }
 }

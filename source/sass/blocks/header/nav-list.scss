@@ -18,11 +18,25 @@
     text-decoration: none;
   }
 
+  &__item--active {
+    position: relative;
+  }
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
   list-style: none;
+}
+
+.nav-list__item--active::after {
+  content: "";
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $basic-lime-green;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,6 +70,13 @@
       font-size: 20px;
       line-height: 30px;
       color: $basic-white;
+    }
+
+    &__item--in a {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $basic-black;
     }
 
     padding: 69px 0 32px 132px;

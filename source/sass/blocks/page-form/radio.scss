@@ -2,16 +2,21 @@
 @import "source/sass/global/colors.scss";
 @import "source/sass/global/viewports.scss";
 
+.radio-bg {
+  border-bottom: 1px solid $basic-light-gray-c;
+}
+
 .radio {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   margin: 0;
   padding: 24px 0 20px 0;
+  border: none;
 }
 
 .radio-list {
-  margin: 0;
+  margin: 0 0 0 45px;
   padding: 0;
   list-style: none;
 }
@@ -24,8 +29,53 @@
   padding-bottom: 0;
 }
 
+.radio-text {
+  position: relative;
+}
+
+.radio-list__input-condition + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -45px;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $basic-light-gray-d;
+  border-radius: 50%;
+}
+
+.radio-list__input-condition:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -36px;
+  margin: 0;
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $basic-lime-green;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: $tablet-width) {
+  .radio-bg {
+    padding: 0 67px 0 71px;
+    border-bottom: none;
+  }
+
   .radio {
     padding: 25px 0 25px 28px;
+    border: 1px solid $basic-light-gray-d;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio-bg {
+    margin: 0;
+    padding: 0;
   }
 }
