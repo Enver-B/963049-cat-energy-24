@@ -13,7 +13,7 @@
 .food-program__bg {
   margin: 0;
   background: linear-gradient(180deg, $basic-lime-green-opacity 60%, $basic-white 40%),
-              url("../../../img/png/index-background-mobile.png") no-repeat center top;
+    url("../../../img/png/index-background-mobile.png") no-repeat center top;
   background-size: 100%;
 }
 
@@ -99,7 +99,7 @@
   .food-program__wrapper {
     margin-top: -8px;
     background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green-opacity 50%),
-                url("../../../img/png/index-background-desktop.png") no-repeat 100% 100%;
+      url("../../../img/png/index-background-desktop.png") no-repeat 100% 100%;
   }
 
   .food-program__bg {
@@ -135,7 +135,7 @@
 
   .food-program__button-wrapper {
     display: inline-block;
-    margin:0 0 185px 80px;
+    margin: 0 0 185px 80px;
     padding: 0;
   }
 }
