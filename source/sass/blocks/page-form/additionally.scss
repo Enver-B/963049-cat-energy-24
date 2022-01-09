@@ -45,6 +45,7 @@
 
 .additionally-text {
   position: relative;
+  cursor: pointer;
 }
 
 .additionally-list__checkbox-input + label::before {
@@ -56,9 +57,8 @@
   padding: 0;
   width: 30px;
   height: 30px;
-  background-image: url("../../../img/svg/checkbox/checkbox.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  border: 1px solid $basic-light-gray-f;
+
 }
 
 .additionally-list__checkbox-input:checked + label::after {
@@ -73,6 +73,20 @@
   background-image: url("../../../img/svg/checkbox/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.additionally-list__checkbox-input:hover + label::before {
+  border-color: $basic-light-gray-i;
+}
+
+.additionally-list__checkbox-input:disabled + label::before,
+.additionally-list__checkbox-input:disabled + label {
+  color: $basic-light-gray;
+  border-color: $basic-light-gray;
+}
+
+.additionally-list__checkbox-input:disabled + label::after {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

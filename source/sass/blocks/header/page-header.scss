@@ -23,6 +23,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
+    max-width: 768px;
     padding: 24px 30px 32px 30px;
   }
 
@@ -33,7 +34,8 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green 50%);
+    background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green-opacity 50%),
+    url("../../../img/png/index-background-desktop.png") no-repeat top right;
   }
 
   .page-header--in {

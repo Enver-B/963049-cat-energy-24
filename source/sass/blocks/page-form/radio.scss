@@ -31,6 +31,7 @@
 
 .radio-text {
   position: relative;
+  cursor: pointer;
 }
 
 .radio-list__input-condition + label::before {
@@ -59,6 +60,20 @@
   background-color: $basic-lime-green;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.radio-list__input-condition:hover + label::before {
+  border-color: $basic-light-gray-i;
+}
+
+.radio-list__input-condition:disabled + label::before,
+.radio-list__input-condition:disabled + label {
+  color: $basic-light-gray;
+  border-color: $basic-light-gray;
+}
+
+.radio-list__input-condition:disabled + label::after {
+  background-color: $basic-lime-green-f;
 }
 
 @media (min-width: $tablet-width) {

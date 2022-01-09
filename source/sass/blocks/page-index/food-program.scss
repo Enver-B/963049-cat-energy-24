@@ -12,12 +12,28 @@
 
 .food-program__bg {
   margin: 0;
-  background: linear-gradient(180deg, $basic-lime-green 70%, $basic-white 30%);
+  background: linear-gradient(180deg, $basic-lime-green-opacity 60%, $basic-white 40%),
+              url("../../../img/png/index-background-mobile.png") no-repeat center top;
+  background-size: 100%;
 }
 
 .food-program__intro {
-  margin: 27px 15px 25px 16px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  text-align: center;
   color: $basic-white;
+}
+
+.food-program__image-wrapper {
+  display: block;
+  margin: 0 auto;
+}
+
+.food-program__image-food {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: auto;
 }
 
 .food-program__button-wrapper {
@@ -37,20 +53,39 @@
 
 @media (min-width: $tablet-width) {
   .food-program__bg {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background: $basic-white;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
+  .food-program__hero {
+    margin: 0 0 0 87px;
   }
 
   .food-program__intro {
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
     color: $basic-black;
   }
 
+  .food-program__image-food {
+    position: absolute;
+    top: 200px;
+    bottom: 160px;
+    left: -30px;
+    width: 709px;
+    height: auto;
+  }
+
   .food-program__button-wrapper {
+    position: relative;
     display: inline-block;
+    margin: 0 0 600px 87px;
     padding: 0;
   }
 
@@ -62,13 +97,16 @@
 
 @media (min-width: $desktop-width) {
   .food-program__wrapper {
-    background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green 50%);
+    margin-top: -8px;
+    background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green-opacity 50%),
+                url("../../../img/png/index-background-desktop.png") no-repeat 100% 100%;
   }
 
   .food-program__bg {
+    position: relative;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: 86px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1220px;
     margin: 0 auto;
     padding: 0;
     background: none;
@@ -80,16 +118,24 @@
   }
 
   .food-program__intro {
-    margin: 27px 0 25px 0;
+    margin: 124px 0 15px 0;
   }
 
   .food-program__slogan {
+    margin: 0 0 52px 0;
+  }
+
+  .food-program__image-wrapper img {
+    top: 36px;
+    left: 450px;
     margin: 0;
+    width: 552px;
+    height: auto;
   }
 
   .food-program__button-wrapper {
     display: inline-block;
-    margin-left: 80px;
+    margin:0 0 185px 80px;
     padding: 0;
   }
 }

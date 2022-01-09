@@ -3,6 +3,38 @@
 @import "source/sass/global/viewports.scss";
 
 .copyright__name-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 281px;
   margin: 0;
+  padding: 22px 0 0 0;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__name-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 163px;
+    margin-left: 20px;
+    padding: 0;
+  }
+}
+
+.copyright__name-wrapper:active .copyright__name path {
+  fill-opacity: 0.3;
+}
+
+.copyright__name-wrapper:hover .copyright__logo path {
+  fill: $basic-lime-green;
+}
+
+.copyright__name-wrapper:active .copyright__logo path {
+  fill: $basic-lime-green-e;
 }

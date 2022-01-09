@@ -12,8 +12,8 @@
 }
 
 .page-header__logo img {
-  width: 33px;
-  height: 37px;
+  width: 100%;
+  height: auto;
 }
 
 .page-header__toggle {
@@ -28,6 +28,8 @@
   cursor: pointer;
   border: none;
 }
+
+
 
 .page-header__toggle--hide::before {
   content: "";
@@ -104,9 +106,12 @@
   }
 
   .page-header__logo-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 134px;
+    display: inline-block;
+    width: 174px;
+  }
+
+  .page-header__logo-title {
+    display: none;
   }
 }
 
@@ -116,7 +121,14 @@
   }
 
   .page-header__logo-wrapper {
-    padding: 0;
+    padding: 53px 0 0 0;
     width: 202px;
+  }
+
+  .page-header__logo:hover img {
+    width: 100%;
+    height: auto;
+
+    fill-opacity: 0.8;
   }
 }

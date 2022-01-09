@@ -41,6 +41,7 @@
 @media (min-width: $tablet-width) {
   .card-content__title {
     margin: 0 20px;
+    padding: 34px 0 21px 0;
     text-align: center;
   }
 
@@ -48,6 +49,10 @@
     margin: 0;
     padding: 6px 0 9px 0;
     border-bottom: 1px solid $basic-light-gray-d;
+  }
+
+  .card-content__wrapper {
+    padding-bottom: 33px;
   }
 }
 

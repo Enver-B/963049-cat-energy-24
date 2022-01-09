@@ -34,6 +34,7 @@
 }
 
 .contact-field {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,16 +57,56 @@
   border: 1px solid $basic-light-gray-d;
 }
 
-.contact-field__email-input {
-  background-image: url("../../../img/svg/icon-form/icon-email.svg");
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
+.contact-field input:hover {
+  border-color: $basic-light-gray-f;
 }
 
-.contact-field__phone-input {
-  background-image: url("../../../img/svg/icon-form/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
+.contact-field input:focus {
+  border-color: $basic-dark-gray;
+}
+
+.contact-field input:focus + .contact-field__email-icon line,
+.contact-field input:focus + .contact-field__email-icon path {
+  stroke: $basic-lime-green;
+}
+
+.contact-field input:invalid:not(:placeholder-shown) {
+  border-color: $basic-light-red;
+}
+
+.contact-field input:invalid:not(:placeholder-shown) + .contact-field__email-icon line,
+.contact-field input:invalid:not(:placeholder-shown) + .contact-field__email-icon path {
+  stroke: $basic-light-red;
+}
+
+.contact-field input:focus + .contact-field__phone-icon path {
+  stroke: $basic-lime-green;
+  fill: $basic-lime-green;
+}
+
+.contact-field input:invalid:not(:placeholder-shown) + .contact-field__phone-icon path {
+  stroke: $basic-light-red;
+  fill: $basic-light-red;
+}
+
+.contact-field__email-icon {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 92%;
+  width: 18px;
+  height: 13px;
+  margin: 0;
+}
+
+.contact-field__phone-icon {
+  content: "";
+  position: absolute;
+  top: 34%;
+  left: 93%;
+  width: 20px;
+  height: 20px;
+  margin: 0;
 }
 
 .contact-field:last-child {
