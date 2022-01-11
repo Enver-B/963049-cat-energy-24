@@ -36,8 +36,14 @@
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
+}
+
+.catalog-card__image {
+  display: inline-block;
+  margin: 0 28px;
 }
 
 .catalog-card__image-card {
@@ -45,10 +51,13 @@
   height: auto;
 }
 
-.catalog-card__other-icon img {
+.catalog-card__other-icon {
   display: block;
   margin: 0 auto;
   padding: 0;
+  border: none;
+  background-color: $basic-white;
+  cursor: pointer;
 }
 
 .catalog-card__other {

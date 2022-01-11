@@ -39,6 +39,26 @@
   border-top: 1px solid $basic-light-gray-c;
 }
 
+.options-foods__link-arrow {
+  width: 24px;
+  height: 12px;
+}
+
+.options-foods__link:hover .options-foods__link-arrow {
+  width: 32px;
+  height: 12px;
+}
+
+.options-foods__link:active {
+  color: $basic-light-gray-g;
+}
+
+.options-foods__link:active .options-foods__link-arrow line,
+.options-foods__link:active .options-foods__link-arrow path {
+  fill: $basic-light-gray-g;
+  stroke: $basic-light-gray-g;
+}
+
 .options-foods__icon-slim {
   width: 50px;
   height: 53px;
@@ -101,33 +121,6 @@
     line-height: 30px;
     border-top: none;
     cursor: pointer;
-  }
-
-  .options-foods__link .options-foods__link-arrow {
-    display: inline;
-  }
-
-  .options-foods__link .options-foods__link-arrow-longer {
-    display: none;
-  }
-
-  .options-foods__link:hover .options-foods__link-arrow {
-    display: none;
-  }
-
-  .options-foods__link:hover .options-foods__link-arrow-longer {
-    display: inline;
-  }
-
-  .options-foods__link:active {
-    color: $basic-light-gray-g;
-  }
-
-  .options-foods__link:active .options-foods__link-arrow-longer line,
-  .options-foods__link:active .options-foods__link-arrow-longer path {
-    display: inline;
-    fill: $basic-light-gray-g;
-    stroke: $basic-light-gray-g;
   }
 }
 

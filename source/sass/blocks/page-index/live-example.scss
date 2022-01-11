@@ -81,6 +81,32 @@
   height: auto;
 }
 
+.live-example__range-before input[type="range"] {
+  overflow: hidden;
+  width: 85px;
+  appearance: none;
+  background-color: $basic-white;
+  border: 1px solid $basic-light-gray-f;
+  border-radius: 6px;
+}
+
+.live-example__range-before input[type="range"]::-webkit-slider-runnable-track {
+  height: 14px;
+  appearance: none;
+  color: $basic-lime-green;
+  margin: 4px;
+  border-radius: 6px;
+}
+
+.live-example__range-before input[type="range"]::-webkit-slider-thumb {
+  width: 14px;
+  appearance: none;
+  height: 14px;
+  cursor: ew-resize;
+  background: $basic-lime-green;
+  border-radius: 50%;
+}
+
 @media (min-width: $tablet-width) {
   .live-example__wrapper {
     display: flex;
