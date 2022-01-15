@@ -10,13 +10,47 @@
   margin: auto;
 }
 
-.food-program__bg {
-  margin: 0;
-  background: linear-gradient(180deg, $basic-lime-green-opacity 60%, $basic-white 40%),
-    url("../../../img/png/index-background-mobile.png") no-repeat center top;
-  background-size: 100%;
-}
+.food-program__bg-image-cat-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  display: block;
+  margin: 0;
+  background: linear-gradient(180deg, $basic-lime-green-opacity 61%, $basic-white 40%),
+    url("../../../img/jpg/index-background-mobile.jpg") no-repeat center top;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(180deg, $basic-lime-green-opacity 60%, $basic-white 40%),
+      url("../../../img/jpg/index-background-mobile@2x.jpg") no-repeat center top;
+    background-size: 320px auto;
+  }
+}
+/*
+.food-program__bg-image {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    background-size: 100%;
+    opacity: 0.15;
+  }
+
+  display: none;
+}
+*/
 .food-program__intro {
   margin: 0 auto;
   padding-bottom: 25px;
@@ -60,6 +94,7 @@
     background: $basic-white;
     margin: 0 auto;
     max-width: 768px;
+    height: 810px;
   }
 
   .food-program__hero {
@@ -85,7 +120,7 @@
   .food-program__button-wrapper {
     position: relative;
     display: inline-block;
-    margin: 0 0 600px 87px;
+    margin: 0 0 0 87px;
     padding: 0;
   }
 
@@ -96,10 +131,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header,
   .food-program__wrapper {
-    margin-top: -8px;
-    background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green-opacity 50%),
-      url("../../../img/png/index-background-desktop.png") no-repeat 100% 100%;
+    background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green-opacity 50%);
   }
 
   .food-program__bg {
@@ -107,9 +141,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1220px;
+    height: auto;
     margin: 0 auto;
     padding: 0;
     background: none;
+    z-index: 5;
   }
 
   .food-program__hero {

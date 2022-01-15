@@ -46,7 +46,6 @@
 
 .options-foods__link:hover .options-foods__link-arrow {
   width: 32px;
-  height: 12px;
 }
 
 .options-foods__link:active {
@@ -55,18 +54,93 @@
 
 .options-foods__link:active .options-foods__link-arrow line,
 .options-foods__link:active .options-foods__link-arrow path {
-  fill: $basic-light-gray-g;
   stroke: $basic-light-gray-g;
+  fill: $basic-light-gray-g;
 }
 
-.options-foods__icon-slim {
+.options-foods__icon-slim-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  display: block;
   width: 50px;
   height: 53px;
 }
 
-.options-foods__icon-pro {
+.options-foods__icon-slim-tablet {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  display: none;
+}
+
+.options-foods__icon-slim-desktop {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    width: 100px;
+    height: 106px;
+  }
+
+  display: none;
+}
+
+.options-foods__icon-pro-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  display: block;
   width: 67px;
   height: 50px;
+}
+
+.options-foods__icon-pro-tablet {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 268px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  display: none;
+}
+
+.options-foods__icon-pro-desktop {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 134px;
+    height: 100px;
+  }
+
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -87,16 +161,6 @@
     grid-column: 2/3;
     grid-row: 1/4;
     margin: 0 0 0 20px;
-  }
-
-  .options-foods__icon-slim {
-    width: 200px;
-    height: 211px;
-  }
-
-  .options-foods__icon-pro {
-    width: 268px;
-    height: 200px;
   }
 
   .options-foods__title {
@@ -136,22 +200,14 @@
   .icon-slim__wrapper {
     grid-column: 1/2;
     grid-row: 1/2;
+    margin: 0;
   }
 
   .icon-pro__wrapper {
     padding-top: 6px;
     grid-column: 1/2;
     grid-row: 1/2;
-  }
-
-  .options-foods__icon-slim {
-    width: 100px;
-    height: 106px;
-  }
-
-  .options-foods__icon-pro {
-    width: 134px;
-    height: 100px;
+    margin: 0;
   }
 
   .options-foods__title {

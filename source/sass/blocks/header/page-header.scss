@@ -33,11 +33,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green-opacity 50%),
-      url("../../../img/png/index-background-desktop.png") no-repeat top right;
-  }
-
   .page-header--in {
     background: $basic-white;
   }

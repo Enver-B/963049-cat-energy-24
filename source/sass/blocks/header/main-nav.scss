@@ -65,15 +65,12 @@
 }
 
 .page-header__toggle--open {
-  top: -12px;
-  right: 18px;
-
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 18px;
+    top: 12px;
+    left: 0;
     width: 25px;
     height: 2px;
     background-color: $basic-black;
@@ -143,7 +140,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    width: 1220px;
+    max-width: 1220px;
   }
 
   .page-header__logo-wrapper {

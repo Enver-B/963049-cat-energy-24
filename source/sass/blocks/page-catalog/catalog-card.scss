@@ -47,8 +47,16 @@
 }
 
 .catalog-card__image-card {
-  width: 100%;
+  min-width: 68px;
   height: auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 161px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 161px;
+  }
 }
 
 .catalog-card__other-icon {
@@ -188,6 +196,10 @@
     margin: 105px 0 0 0;
     padding: 0 39px 39px 39px;
     border: 2px solid $basic-gray;
+  }
+
+  .catalog-card__bg {
+    max-width: 148px;
   }
 
   .card-content__other-title {
