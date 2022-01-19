@@ -58,13 +58,15 @@
   fill: $basic-light-gray-g;
 }
 
-.options-foods__icon-slim-mobile {
+.options-foods__icon-slim {
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 200px;
+    height: 211px;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    width: 100px;
+    height: 106px;
   }
 
   display: block;
@@ -72,75 +74,20 @@
   height: 53px;
 }
 
-.options-foods__icon-slim-tablet {
+.options-foods__icon-pro {
   @media (min-width: $tablet-width) {
-    display: block;
-    width: 200px;
-    height: 211px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-
-  display: none;
-}
-
-.options-foods__icon-slim-desktop {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-
-    width: 100px;
-    height: 106px;
-  }
-
-  display: none;
-}
-
-.options-foods__icon-pro-mobile {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-
-  display: block;
-  width: 67px;
-  height: 50px;
-}
-
-.options-foods__icon-pro-tablet {
-  @media (min-width: $tablet-width) {
-    display: block;
     width: 268px;
     height: 200px;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
-  }
-
-  display: none;
-}
-
-.options-foods__icon-pro-desktop {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
     width: 134px;
     height: 100px;
   }
 
-  display: none;
+  display: block;
+  width: 67px;
+  height: 50px;
 }
 
 @media (min-width: $tablet-width) {

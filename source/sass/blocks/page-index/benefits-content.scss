@@ -10,24 +10,15 @@
   margin: 0;
 }
 
-.benefits-content__icon-mobile {
+.benefits-content__icon {
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 80px;
+    height: 80px;
   }
 
   display: block;
   width: 60px;
   height: 60px;
-}
-
-.benefits-content__icon-tablet {
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 80px;
-    height: 80px;
-  }
-
-  display: none;
 }
 
 .benefits-content__text {

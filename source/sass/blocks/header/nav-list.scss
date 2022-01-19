@@ -71,6 +71,7 @@
   .nav-list {
     &__item {
       padding: 0;
+      z-index: 5;
     }
 
     &__item a {
@@ -78,6 +79,7 @@
       font-size: 20px;
       line-height: 30px;
       color: $basic-white;
+      z-index: 5;
     }
 
     &__item--in a {

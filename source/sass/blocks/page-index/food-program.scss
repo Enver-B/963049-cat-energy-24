@@ -7,7 +7,12 @@
 }
 
 .food-program__wrapper {
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+
   margin: auto;
+  background: linear-gradient(180deg, $basic-lime-green-opacity 61%, $basic-white 40%);
 }
 
 .food-program__bg-image-cat-mobile {
@@ -16,41 +21,22 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
     display: block;
     width: auto;
     height: auto;
+    opacity: 0.15;
+    z-index: 0;
   }
 
   display: block;
+  position: absolute;
   margin: 0;
-  background: linear-gradient(180deg, $basic-lime-green-opacity 61%, $basic-white 40%),
-    url("../../../img/jpg/index-background-mobile.jpg") no-repeat center top;
-  background-size: 100%;
-
-  @media (min-resolution: 2dppx) {
-    background: linear-gradient(180deg, $basic-lime-green-opacity 60%, $basic-white 40%),
-      url("../../../img/jpg/index-background-mobile@2x.jpg") no-repeat center top;
-    background-size: 320px auto;
-  }
+  opacity: 0.15;
 }
-/*
-.food-program__bg-image {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 50%;
-    background-size: 100%;
-    opacity: 0.15;
-  }
-
-  display: none;
-}
-*/
 .food-program__intro {
   margin: 0 auto;
   padding-bottom: 25px;
@@ -127,11 +113,13 @@
   .food-program__button {
     display: inline-block;
     padding: 14px 26px 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header,
+  .page-header--bg,
   .food-program__wrapper {
     background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green-opacity 50%);
   }
@@ -140,8 +128,9 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     max-width: 1220px;
-    height: auto;
+    height: 580px;
     margin: 0 auto;
     padding: 0;
     background: none;
@@ -171,7 +160,7 @@
 
   .food-program__button-wrapper {
     display: inline-block;
-    margin: 0 0 185px 80px;
+    margin: 0 0 0 80px;
     padding: 0;
   }
 }
