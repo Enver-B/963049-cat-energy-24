@@ -37,7 +37,15 @@
 .additional-goods__gift {
   margin: 35px 0 0 0;
   padding: 0;
-  background-color: $basic-lime-green;
+  background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0),
+    url("../../../img/jpg/additional-goods-image-bg-mobile.jpg") no-repeat 100% 100%;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0),
+      url("../../../img/jpg/additional-goods-image-bg-mobile@2x.jpg") no-repeat 100% 100%;
+    background-size: 100%;
+  }
 }
 
 .additional-goods__gift-icon {
@@ -65,6 +73,15 @@
 
   .additional-goods__gift {
     margin-top: 69px;
+    background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0),
+      url("../../../img/jpg/additional-goods-image-bg-tablet.jpg") no-repeat 100% 100%;
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0),
+        url("../../../img/jpg/additional-goods-image-bg-tablet@2x.jpg") no-repeat 100% 100%;
+      background-size: 100%;
+    }
   }
 
   .additional-goods__gift-wrapper {
@@ -108,6 +125,15 @@
 
   .additional-goods__gift {
     margin: 0;
+    background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0),
+      url("../../../img/jpg/additional-goods-image-bg-desktop.jpg") no-repeat 100% 100%;
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0),
+        url("../../../img/jpg/additional-goods-image-bg-desktop@2x.jpg") no-repeat 100% 100%;
+      background-size: 100%;
+    }
   }
 
   .additional-goods__gift-wrapper {

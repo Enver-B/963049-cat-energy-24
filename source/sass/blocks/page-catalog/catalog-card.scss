@@ -18,6 +18,7 @@
 }
 
 .catalog-card:last-child {
+  position: relative;
   padding: 25px 0 25px 0;
 }
 
@@ -35,14 +36,36 @@
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
-.catalog-card__other-icon img {
+.catalog-card__image {
+  display: inline-block;
+  margin: 0 28px;
+}
+
+.catalog-card__image-card {
+  min-width: 68px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 161px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 161px;
+  }
+}
+
+.catalog-card__other-icon {
   display: block;
   margin: 0 auto;
   padding: 0;
+  border: none;
+  background-color: $basic-white;
+  cursor: pointer;
 }
 
 .catalog-card__other {
@@ -50,6 +73,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.catalog-card__other-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-card__image-icon {
+  width: 30px;
+  height: 30px;
 }
 
 .card-content__other-title {
@@ -70,15 +108,28 @@
   background-color: $basic-gray;
   text-transform: uppercase;
   border-style: none;
+  cursor: pointer;
+}
+
+.show-all-button:hover {
+  background-color: $basic-light-gray-e;
+}
+
+.show-all-button:active {
+  color: $basic-light-gray-h;
+  background-color: $basic-light-gray-e;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-card {
+    display: flex;
     position: relative;
     padding: 8px 0 0 0;
   }
 
   .catalog-card:last-child {
+    display: flex;
+    position: relative;
     padding: 0;
   }
 
@@ -87,6 +138,8 @@
   }
 
   .catalog-card__basic-bg {
+    display: flex;
+    align-items: flex-end;
     margin: 30px;
     padding: 39px;
     background: linear-gradient(180deg, $basic-white 20%, $basic-gray 15%);
@@ -103,13 +156,22 @@
   }
 
   .catalog-card__other-bg {
-    margin: 65px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 145px 30px 30px 30px;
     padding: 39px;
     border: 2px solid $basic-gray;
   }
 
   .card-content__other-title {
     text-align: center;
+  }
+
+  .catalog-card__image-icon {
+    width: 60px;
+    height: 60px;
   }
 
   .card-content__text {
@@ -131,9 +193,13 @@
   }
 
   .catalog-card__other-bg {
-    margin: 50px 0 0 0;
+    margin: 105px 0 0 0;
     padding: 0 39px 39px 39px;
     border: 2px solid $basic-gray;
+  }
+
+  .catalog-card__bg {
+    max-width: 148px;
   }
 
   .card-content__other-title {

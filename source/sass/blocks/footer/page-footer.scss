@@ -27,6 +27,15 @@
 
 .page-footer__logo-wrapper {
   padding-bottom: 32px;
+  cursor: pointer;
+}
+
+.page-footer__logo-wrapper:hover .page-footer__logo path {
+  fill: $basic-dark-gray-c;
+}
+
+.page-footer__logo-wrapper:active .page-footer__logo path {
+  fill: $basic-dark-gray-d;
 }
 
 .page-footer__logo-wrapper::after {
@@ -55,15 +64,6 @@
   background-color: $basic-light-gray-c;
 }
 
-.page-footer__copyright {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 281px;
-}
-
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
@@ -82,19 +82,6 @@
   .page-footer__logo-wrapper::after,
   .page-footer__networks::after {
     display: none;
-  }
-
-  .page-footer__copyright {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 163px;
-  }
-
-  .copyright__name-wrapper {
-    margin-left: 20px;
   }
 }
 

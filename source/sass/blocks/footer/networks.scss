@@ -12,3 +12,21 @@
   margin: 0;
   padding: 0;
 }
+
+.networks-list__link:hover .networks-list__link-icon path {
+  fill: $basic-lime-green;
+  stroke: $basic-lime-green;
+}
+
+.networks-list__link:hover .networks-list__link-icon-fb path {
+  stroke: $basic-lime-green;
+}
+
+.networks-list__link:active .networks-list__link-icon path {
+  fill: $basic-lime-green-e;
+  stroke: $basic-lime-green-e;
+}
+
+.networks-list__link:active .networks-list__link-icon-fb path {
+  stroke: $basic-lime-green-e;
+}

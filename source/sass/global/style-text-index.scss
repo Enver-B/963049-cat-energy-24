@@ -3,8 +3,9 @@
 @import "source/sass/global/viewports.scss";
 
 .food-program__slogan {
-  margin: 0 60px 0 62px;
+  margin: 0 auto;
   line-height: 14px;
+  text-align: center;
   color: $basic-white;
   text-transform: uppercase;
 }
@@ -13,6 +14,7 @@
   .food-program__slogan {
     font-size: 20px;
     line-height: 20px;
+    text-align: start;
     color: $basic-black;
   }
 }

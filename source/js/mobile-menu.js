@@ -12,15 +12,3 @@ headerToggle.addEventListener('click', function () {
       navMain.classList.remove('main-nav--open');
     }
 })
-
-headerToggle.onclick = function () {
-  if (headerToggle.classList.contains('page-header__toggle--open')) {
-    headerToggle.classList.remove('page-header__toggle--hide::before ');
-    headerToggle.classList.add('page-header__toggle--open');
-  } else {
-    headerToggle.classList.remove('page-header__toggle--open')
-    headerToggle.classList.add('page-header__toggle--hide::before ');
-  }
-}
-
-headerToggle();

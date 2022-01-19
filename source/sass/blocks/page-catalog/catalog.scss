@@ -3,8 +3,9 @@
 @import "source/sass/global/viewports.scss";
 
 .catalog__title {
-  margin: 0;
+  margin: 0 auto;
   padding: 27px 0 41px 0;
+  max-width: 320px;
 }
 
 .catalog-wrapper {
@@ -27,7 +28,9 @@
   .catalog__title {
     font-size: 60px;
     line-height: 60px;
+    margin: 0 auto;
     padding: 33px 0 82px 0;
+    max-width: 768px;
   }
 
   .catalog-wrapper {
@@ -38,6 +41,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 768px;
   }
 }
 
@@ -50,6 +55,7 @@
 
   .catalog__title {
     padding: 74px 0 84px 0;
+    max-width: 1440px;
   }
 
   .catalog-list {
@@ -57,5 +63,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 62px 80px;
+    margin: 0 auto;
+    max-width: 1440px;
   }
 }

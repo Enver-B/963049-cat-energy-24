@@ -40,6 +40,18 @@
   border: 1px solid $basic-light-gray-d;
 }
 
+.user-field input:hover {
+  border-color: $basic-light-gray-f;
+}
+
+.user-field input:focus {
+  border-color: $basic-dark-gray;
+}
+
+.user-field input:invalid:not(:placeholder-shown) {
+  border-color: $basic-light-red;
+}
+
 .user-field:last-child {
   padding-bottom: 0;
 }

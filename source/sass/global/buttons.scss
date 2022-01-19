@@ -13,3 +13,12 @@
   border-style: none;
   cursor: pointer;
 }
+
+.button-primary:hover {
+  background-color: $basic-lime-green-c;
+}
+
+.button-primary:active {
+  color: $basic-lime-green-d;
+  background-color: $basic-lime-green-c;
+}
