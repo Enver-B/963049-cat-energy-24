@@ -62,7 +62,8 @@
   background-position: center;
 }
 
-.radio-list__input-condition:hover + label::before {
+.radio-list__input-condition:hover + label::before,
+.radio-list__input-condition:focus + label::before {
   border-color: $basic-light-gray-i;
 }
 

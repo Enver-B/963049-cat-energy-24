@@ -50,6 +50,10 @@
 }
 
 .page-footer__networks {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
   padding: 20px 0 21px 0;
 }
 

@@ -13,20 +13,42 @@
   padding: 0;
 }
 
-.networks-list__link:hover .networks-list__link-icon path {
+.networks-list__link-icon,
+.networks-list__link-icon-fb {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  display: block;
+}
+
+.networks-list__link-icon-tablet,
+.networks-list__link-icon-tablet-fb {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  display: none;
+}
+
+.networks-list__link:hover .networks-list__link-icon path,
+.networks-list__link:hover .networks-list__link-icon-tablet path {
   fill: $basic-lime-green;
   stroke: $basic-lime-green;
 }
 
-.networks-list__link:hover .networks-list__link-icon-fb path {
+.networks-list__link:hover .networks-list__link-icon-fb path,
+.networks-list__link:hover .networks-list__link-icon-tablet-fb path {
   stroke: $basic-lime-green;
 }
 
-.networks-list__link:active .networks-list__link-icon path {
+.networks-list__link:active .networks-list__link-icon path,
+.networks-list__link:active .networks-list__link-icon-tablet path {
   fill: $basic-lime-green-e;
   stroke: $basic-lime-green-e;
 }
 
-.networks-list__link:active .networks-list__link-icon-fb path {
+.networks-list__link:active .networks-list__link-icon-fb path,
+.networks-list__link:active .networks-list__link-icon-tablet-fb path {
   stroke: $basic-lime-green-e;
 }
