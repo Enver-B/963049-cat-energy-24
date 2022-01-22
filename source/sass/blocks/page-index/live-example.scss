@@ -3,8 +3,31 @@
 @import "source/sass/global/viewports.scss";
 
 .live-example {
+  @media (min-width: $tablet-width) {
+    padding: 43px 0 0 0;
+  }
+
+  position: relative;
+  padding: 25px 0 0 0;
   background-color: $basic-light-gray;
 }
+
+.live-example::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $basic-light-gray-b;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 
 .live-example__wrapper {
   padding-top: 25px;
