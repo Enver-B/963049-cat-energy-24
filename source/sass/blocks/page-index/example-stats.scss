@@ -1,0 +1,129 @@
+.example-stats__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.example-stats__item + .example-stats__item {
+  margin: 0 0 0 29px;
+}
+
+.example-stats__weight {
+  margin: 0;
+  padding: 15px 43px 15px 43px;
+  border: 1px solid $basic-light-gray-f;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.example-stats__time {
+  margin: 0;
+  padding: 15px 21px 15px 21px;
+  border: 1px solid $basic-light-gray-f;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.example-stats__text {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $basic-black;
+}
+
+.example-stats__weight-description,
+.example-stats__time-description {
+  margin: -14px 20px 0 20px;
+  padding: 5px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: $basic-dark-gray;
+  text-align: center;
+  background-color: $basic-light-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .example-stats__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 366px;
+  }
+
+  .example-stats__item + .example-stats__item {
+    margin: 0;
+  }
+
+  .example-stats__weight,
+  .example-stats__time {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example-stats__weight {
+    min-width: 140px;
+    padding: 17px 10px;
+  }
+
+  .example-stats__time {
+    min-width: 114px;
+    margin: 1px 0 0 12px;
+    padding: 16px 24px;
+  }
+
+  .example-stats__weight-description,
+  .example-stats__time-description {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $basic-white;
+  }
+
+  .example-stats__weight-description {
+    margin: -12px 20px -10px 19px;
+    padding: 5px;
+  }
+
+  .example-stats__time-description {
+    margin: -12px 8px 0 18px;
+    padding: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-stats__wrapper {
+    margin: 0 0 4px 0;
+  }
+
+  .example-stats__item {
+    margin: 0 22px 0 0;
+  }
+
+  .example-stats__time {
+    margin: 1px 0 0 23px;
+    padding: 15px 24px 15px 19px;
+  }
+
+  .example-stats__weight-description,
+  .example-stats__time-description{
+    background-color: $basic-gray;
+  }
+
+  .example-stats__weight-description {
+    margin: -12px 20px -10px 19px;
+    padding: 5px;
+  }
+
+  .example-stats__time-description {
+    max-width: 132px;
+    margin: -9px -2px 0 29px;
+    padding: 5px;
+  }
+}

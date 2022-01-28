@@ -1,13 +1,10 @@
 // global
-@import "global/colors.scss";
+@import "global/vars.scss";
 @import "global/fonts.scss";
-@import "global/helper.scss";
+@import "global/viewports.scss";
 @import "global/page-body.scss";
 @import "global/buttons.scss";
-@import "global/style-text-index.scss";
-@import "global/style-text-form.scss";
-@import "global/style-text-catalog.scss";
-@import "global/viewports.scss";
+@import "global/helper.scss";
 
 // blocks
 //header
@@ -29,6 +26,7 @@
 @import "blocks/page-index/food-program.scss";
 @import "blocks/page-index/healthy-food.scss";
 @import "blocks/page-index/live-example.scss";
+@import "blocks/page-index/example-stats.scss";
 @import "blocks/page-index/options-foods.scss";
 @import "blocks/page-index/total-costs.scss";
 
@@ -52,5 +50,6 @@
 @import "blocks/page-form/program-page.scss";
 @import "blocks/page-form/radio.scss";
 @import "blocks/page-form/user.scss";
+@import "blocks/page-form/field-text.scss";
 
 // components

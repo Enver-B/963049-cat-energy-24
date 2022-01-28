@@ -1,66 +1,67 @@
-@import "source/sass/global/fonts.scss";
-@import "source/sass/global/colors.scss";
-@import "source/sass/global/viewports.scss";
-
 .additionally {
   position: relative;
   margin: 0;
-  padding: 0 0 41px 0;
+  padding: 0 0 38px 0;
   border: none;
 }
 
 .additionally::before {
   content: "";
   position: absolute;
-  top: 40px;
+  top: 23px;
   width: 100%;
   height: 1px;
   background-color: $basic-lime-green;
 }
 
-.additionally-title {
+.additionally__title {
   position: relative;
   display: inline-block;
   margin: 0 0 0 -20px;
-  padding: 23px 23px 39px 20px;
+  padding: 8px 23px 39px 20px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $basic-black;
   background-color: $basic-white;
 }
 
-.additionally-list {
+.additionally__list {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0 0 0 46px;
+  margin: 0 0 0 34px;
   padding: 0;
   list-style: none;
 }
 
-.additionally-list__item {
-  margin: 0;
-  padding-bottom: 24px;
+.additionally__item {
+  margin: 0 0 1px 12px;
+  padding-bottom: 23px;
 }
 
-.additionally-list__item:last-child {
+.additionally__item:last-child {
   padding-bottom: 0;
 }
 
-.additionally-text {
+.additionally__text {
   position: relative;
+  color: $basic-black;
   cursor: pointer;
 }
 
-.additionally-list__checkbox-input + label::before {
+.additionally__checkbox-input + label::before {
   content: "";
   position: absolute;
   top: -3px;
   left: -46px;
   margin: 0;
   padding: 0;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border: 1px solid $basic-light-gray-f;
 }
 
-.additionally-list__checkbox-input:checked + label::after {
+.additionally__checkbox-input:checked + label::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -72,44 +73,95 @@
   background-image: url("data:image/svg+xml,%3Csvg width='19' height='15' viewBox='0 0 19 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z' fill='%2368B738'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: 100%;
 }
 
-.additionally-list__checkbox-input:hover + label::before,
-.additionally-list__checkbox-input:focus + label::before {
+.additionally__checkbox-input:hover + label::before,
+.additionally__checkbox-input:focus + label::before {
   border-color: $basic-light-gray-i;
 }
 
-.additionally-list__checkbox-input:disabled + label::before,
-.additionally-list__checkbox-input:disabled + label {
+.additionally__checkbox-input:disabled + label::before,
+.additionally__checkbox-input:disabled + label {
   color: $basic-light-gray;
   border-color: $basic-light-gray;
 }
 
-.additionally-list__checkbox-input:disabled + label::after {
+.additionally__checkbox-input:disabled + label::after {
   opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .additionally {
-    padding: 0 0 30px 0;
+    padding: 0 0 51px 0;
   }
 
-  .additionally-title {
-    margin: 0;
+  .additionally::before {
+    top: 45px;
+  }
+
+  .additionally__title {
+    margin: 0 0 24px 0;
     padding: 23px 40px 39px 41px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
-  .additionally-list {
+  .additionally__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 93px;
+    grid-row-gap: 20px;
     padding: 0 40px;
+  }
+
+  .additionally__item {
+    margin: 0 0 1px 25px;
+    padding-bottom: 20px;
+  }
+
+  .additionally__checkbox-input + label::before {
+    top: -6px;
+    left: -59px;
+    width: 39px;
+    height: 39px;
+  }
+
+  .additionally__checkbox-input:checked + label::after {
+    top: 5px;
+    left: -50px;
+    width: 24px;
+    height: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .additionally-list {
+  .additionally {
+    padding: 0 0 59px 0;
+  }
+
+  .additionally__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 169px;
+    margin: -1px 0 0 0;
+  }
+
+  .additionally__item {
     margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .additionally__item:first-child {
+    margin-left: 16px;
+  }
+
+  .additionally__item:last-child {
+    margin-left: 7px;
+  }
+
+  .additionally__title {
+    margin: -1px 0 24px -41px;;
+    padding: 23px 40px 39px 41px;
   }
 }

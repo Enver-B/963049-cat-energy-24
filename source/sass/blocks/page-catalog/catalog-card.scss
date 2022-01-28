@@ -1,20 +1,25 @@
-@import "source/sass/global/fonts.scss";
-@import "source/sass/global/colors.scss";
-@import "source/sass/global/viewports.scss";
-
 .catalog-card {
   position: relative;
-  padding: 8px 0 25px 0;
+  padding: 0 0 0 0;
+}
+
+.catalog-card__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
 }
 
 .catalog-card::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -19px;
   left: 0;
   width: 100%;
   height: 1px;
   background-color: $basic-light-gray-e;
+  z-index: 3;
 }
 
 .catalog-card:last-child {
@@ -27,29 +32,34 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin: 0;
+  padding: 19px 0 0 0;
 }
 
 .catalog-card__bg {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 0;
-  padding: 0;
+  padding: 0 0 21px 0;
 }
 
 .catalog-card__image {
-  display: inline-block;
-  margin: 0 28px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+}
+
+.catalog-card__button {
+  display: block;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .catalog-card__image-card {
-  min-width: 68px;
-  height: auto;
-
   @media (min-width: $tablet-width) {
     min-width: 161px;
   }
@@ -57,6 +67,10 @@
   @media (min-width: $desktop-width) {
     max-width: 161px;
   }
+
+  min-width: 68px;
+  height: auto;
+  margin: 0;
 }
 
 .catalog-card__other-icon {
@@ -90,32 +104,42 @@
   height: 30px;
 }
 
-.card-content__other-title {
+.catalog-card__other-title {
   margin: 0;
-  padding: 23px 0 8px 0;
+  padding: 19px 0 8px 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.card-content__text {
+.catalog-card__other-text {
   margin: 0;
   padding-bottom: 21px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
 }
 
-.show-all-button {
+.catalog-card__show-all-button {
   display: block;
   width: 100%;
   margin: 0;
   padding: 10px 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   background-color: $basic-gray;
   text-transform: uppercase;
   border-style: none;
   cursor: pointer;
 }
 
-.show-all-button:hover {
+.catalog-card__show-all-button:hover {
   background-color: $basic-light-gray-e;
 }
 
-.show-all-button:active {
+.catalog-card__show-all-button:active {
   color: $basic-light-gray-h;
   background-color: $basic-light-gray-e;
 }
@@ -124,7 +148,7 @@
   .catalog-card {
     display: flex;
     position: relative;
-    padding: 8px 0 0 0;
+    max-height: 511px;
   }
 
   .catalog-card:last-child {
@@ -139,20 +163,36 @@
 
   .catalog-card__basic-bg {
     display: flex;
-    align-items: flex-end;
-    margin: 30px;
-    padding: 39px;
-    background: linear-gradient(180deg, $basic-white 20%, $basic-gray 15%);
+    padding: 0 36px 36px 38px;
+    background: linear-gradient(180deg, $basic-white 16%, $basic-gray 15%);
+  }
+
+  .catalog-card__wrapper {
+    justify-content: flex-end;
+    padding: 0;
   }
 
   .catalog-card__bg {
+    /*
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; */
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;/*
+    min-width: 248px;
+    max-height: 391px;*/
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
+  }
+
+  .catalog-card__content {
+    align-items: center;
+  }
+
+  .catalog-card__button {
+    margin: 0 0 0 0;
   }
 
   .catalog-card__other-bg {
@@ -160,12 +200,18 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    margin: 145px 30px 30px 30px;
-    padding: 39px;
+    margin: 30px 30px 30px 30px;
+    padding: 36px;
     border: 2px solid $basic-gray;
   }
 
-  .card-content__other-title {
+  .catalog-card__other-wrapper {
+    min-width: 250px;
+  }
+
+  .catalog-card__other-title {
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
   }
 
@@ -174,13 +220,14 @@
     height: 60px;
   }
 
-  .card-content__text {
+  .catalog-card__other-text {
     margin: 0;
     padding: 23px 0 87px 0;
+    font-size: 16px;
     text-align: center;
   }
 
-  .show-all-button {
+  .catalog-card__show-all-button {
     font-size: 16px;
     line-height: 20px;
   }
@@ -202,7 +249,7 @@
     max-width: 148px;
   }
 
-  .card-content__other-title {
+  .catalog-card__other-title {
     margin: 0;
     padding: 23px 0 0 0;
   }

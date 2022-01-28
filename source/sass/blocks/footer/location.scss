@@ -1,13 +1,9 @@
-@import "source/sass/global/fonts.scss";
-@import "source/sass/global/colors.scss";
-@import "source/sass/global/viewports.scss";
-
 .location__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
-  padding-top: 26px;
+  padding-top: 28px;
   padding-bottom: 26px;
 }
 
@@ -19,13 +15,25 @@
 
 .location__wrapper-map iframe {
   display: block;
+  width: 100%;
+  height: 362px;
   border: none;
 }
 
-.location__point-map {
+.location__point-map svg {
   position: absolute;
-  top: 180px;
-  left: 130px;
+  top: 137px;
+  left: 134px;
+}
+
+.location__point-map svg {
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 105px;
+  }
+
+  width: 57px;
+  height: 53px;
 }
 
 .location__invitation {
@@ -34,7 +42,17 @@
 
 .location__invitation-text {
   margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
   color: $basic-middle-black;
+}
+
+.location__contact-address {
+  margin: 0 5px 0 0;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  line-height: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,9 +63,23 @@
     padding: 56px 40px 56px 40px;
   }
 
-  .location__point-map {
-    top: 180px;
-    left: 350px;
+  .location__wrapper-map {
+    margin: 0 -30px;
+  }
+
+  .location__point-map svg {
+    position: absolute;
+    top: 150px;
+    left: 332px;
+  }
+
+  .location__wrapper-map iframe {
+    height: 400px;
+  }
+
+
+  .location__invitation {
+    margin: 4px 0 0 0;
   }
 
   .location__invitation-text {
@@ -56,7 +88,16 @@
   }
 
   .location__contact-address {
+    position: relative;
+    margin: 0 0 0 10px;
+    text-align: right;
     font-size: 16px;
+  }
+
+  .location__contact-address span {
+    position: absolute;
+    top: 60px;
+    left: 28px;
   }
 }
 
@@ -78,10 +119,14 @@
     padding: 0;
   }
 
-  .location__point-map {
-    position: absolute;
-    top: 180px;
-    left: 690px;
+  .location__contact-address {
+    margin: 0 0 0 9px;
+    text-align: left;
+  }
+
+  .location__contact-address span {
+    top: 58px;
+    left: 0;
   }
 
   .location__invitation-text {
@@ -98,7 +143,9 @@
     cursor: pointer;
   }
 
-  .page-footer__connections {
-    margin-top: 260px;
+  .location__point-map svg {
+    position: absolute;
+    top: 132px;
+    left: 907px;
   }
 }

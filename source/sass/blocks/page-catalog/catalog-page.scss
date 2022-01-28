@@ -1,2 +1,5 @@
-@import "source/sass/global/fonts.scss";
-@import "source/sass/global/colors.scss";
+@media (min-width: $tablet-width) {
+  .catalog-page__wrapper {
+    border-top: none;
+  }
+}
