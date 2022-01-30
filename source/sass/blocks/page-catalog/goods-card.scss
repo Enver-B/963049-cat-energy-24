@@ -77,6 +77,7 @@
   }
 
   .goods-card__text {
+    padding: 0;
     font-size: 16px;
     line-height: 20px;
   }
@@ -85,8 +86,8 @@
     margin-left: 49px;
   }
 
-  .goods-card__text {
-    padding: 0;
+  .goods-card__text span {
+    padding: 0 8px 0 0;
   }
 
   .goods-card__button {
@@ -97,9 +98,9 @@
 @media (min-width: $desktop-width) {
   .goods-card__wrapper {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 244px;
     grid-column-gap: 38px;
-    padding: 12px 0 14px 0;
+    padding: 16px 0 14px 0;
     border-right: none;
     border-left: none;
   }
@@ -107,11 +108,20 @@
   .goods-card__bg {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0;
   }
 
   .goods-card__text-wrapper {
     display: flex;
     flex-wrap: nowrap;
+  }
+
+  .goods-card__text-weight {
+    margin: 6px 0 0 18px;
+  }
+
+  .goods-card__text-price {
+    margin: 0 7px 0 0;
   }
 
   .goods-card__button {

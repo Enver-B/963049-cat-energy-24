@@ -20,3 +20,12 @@
   width: 100%;
   background-color: $basic-white;
 }
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .nav-list {
+  display: block;
+}

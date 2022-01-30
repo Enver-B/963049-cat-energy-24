@@ -1,4 +1,8 @@
 .networks-list {
+  @media (min-width: $desktop-width) {
+    margin: -3px 0 0 5px;
+  }
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +34,6 @@
 .networks-list__link:hover .networks-list__link-icon path,
 .networks-list__link:hover .networks-list__link-icon-tablet path {
   fill: $basic-lime-green;
-  stroke: $basic-lime-green;
 }
 
 .networks-list__link:hover .networks-list__link-icon-fb path,

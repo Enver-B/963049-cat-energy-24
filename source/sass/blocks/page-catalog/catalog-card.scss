@@ -148,7 +148,7 @@
   .catalog-card {
     display: flex;
     position: relative;
-    max-height: 511px;
+    max-height: 515px;
   }
 
   .catalog-card:last-child {
@@ -173,22 +173,25 @@
   }
 
   .catalog-card__bg {
-    /*
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;/*
-    min-width: 248px;
-    max-height: 391px;*/
-    margin: 0;
+    align-items: center;
+    margin: 0 0 16px 0;
     padding: 0;
+  }
+
+  .catalog-card__image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+    padding: 13px 0 0 0;
   }
 
   .catalog-card__content {
     align-items: center;
+    padding: 15px 0 15px 0;
   }
 
   .catalog-card__button {
@@ -200,8 +203,8 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    margin: 30px 30px 30px 30px;
-    padding: 36px;
+    margin: 83px 30px 0 30px;
+    padding: 34px;
     border: 2px solid $basic-gray;
   }
 
@@ -209,7 +212,13 @@
     min-width: 250px;
   }
 
+  .catalog-card__other-icon {
+    padding: 0 0 24px 0;
+  }
+
   .catalog-card__other-title {
+    max-width: 134px;
+    padding: 19px 0 0 0;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -221,13 +230,15 @@
   }
 
   .catalog-card__other-text {
+    max-width: 167px;
     margin: 0;
-    padding: 23px 0 87px 0;
+    padding: 23px 0 86px 0;
     font-size: 16px;
     text-align: center;
   }
 
   .catalog-card__show-all-button {
+    margin: 2px 0 -3px 0;
     font-size: 16px;
     line-height: 20px;
   }
@@ -236,21 +247,43 @@
 @media (min-width: $desktop-width) {
   .catalog-card__basic-bg {
     margin: 0;
-    padding: 0 39px 39px 39px;
-  }
-
-  .catalog-card__other-bg {
-    margin: 105px 0 0 0;
-    padding: 0 39px 39px 39px;
-    border: 2px solid $basic-gray;
+    padding: 0 38px 40px 38px;
   }
 
   .catalog-card__bg {
-    max-width: 148px;
+    max-width: 170px;
+  }
+
+  .catalog-card__content {
+    padding: 22px 0 16px 0;
+  }
+
+  .catalog-card__other-wrapper {
+    min-width: 170px;
+  }
+
+  .catalog-card__other-bg {
+    margin: 85px 0 0 0;
+    padding: 0 35px 39px 35px;
+    border: 2px solid $basic-gray;
+  }
+
+  .catalog-card__other-icon {
+    padding: 0 0 19px 0;
   }
 
   .catalog-card__other-title {
     margin: 0;
     padding: 23px 0 0 0;
+  }
+
+  .catalog-card__other-text {
+    max-width: 167px;
+    margin: 0;
+    padding: 23px 0 90px 0;
+  }
+
+  .catalog-card__show-all-button {
+    margin: 0;
   }
 }
