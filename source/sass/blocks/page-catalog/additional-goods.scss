@@ -38,13 +38,11 @@
 .additional-goods__gift {
   margin: 35px 0 0 0;
   padding: 0;
-  background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0),
-    url("../../../img/jpg/additional-goods-image-bg-mobile.jpg") no-repeat 100% 100%;
+  background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0);
   background-size: 100%;
 
   @media (min-resolution: 2dppx) {
-    background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0),
-      url("../../../img/jpg/additional-goods-image-bg-mobile@2x.jpg") no-repeat 100% 100%;
+    background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0);
     background-size: 100%;
   }
 }
@@ -66,6 +64,13 @@
   color: $basic-white;
 }
 
+.additional-goods__bg-image-mobile {
+  position: absolute;
+  display: block;
+  margin: 0;
+  opacity: 0.15;
+}
+
 @media (min-width: $tablet-width) {
   .additional-goods__wrapper {
     padding-top: 48px;
@@ -85,20 +90,19 @@
   }
 
   .additional-goods__gift {
-    margin-top: 66px;
-    margin-bottom: 47px;
-    background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0),
-      url("../../../img/jpg/additional-goods-image-bg-tablet.jpg") no-repeat 100% 100%;
+    margin-top: 70px;
+    margin-bottom: 46px;
+    background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0);
     background-size: 100%;
 
     @media (min-resolution: 2dppx) {
-      background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0),
-        url("../../../img/jpg/additional-goods-image-bg-tablet@2x.jpg") no-repeat 100% 100%;
+      background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0);
       background-size: 100%;
     }
   }
 
   .additional-goods__gift-wrapper {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -108,8 +112,20 @@
     padding: 57px 124px 60px 77px;
   }
 
-  .additional-goods__gift-icon {
+  .additional-goods__bg-image-mobile {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     margin: 0;
+    background-size: 100%;
+    opacity: 0.15;
+  }
+
+  .additional-goods__gift-icon {
+    margin: 0 266px 0 0;
     padding: 0;
   }
 
@@ -145,15 +161,17 @@
   .additional-goods__gift {
     margin: 0;
     max-height: 288px;
-    background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0),
-      url("../../../img/jpg/additional-goods-image-bg-desktop.jpg") no-repeat 100% 100%;
+    background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0);
     background-size: 100%;
 
     @media (min-resolution: 2dppx) {
-      background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0),
-        url("../../../img/jpg/additional-goods-image-bg-desktop@2x.jpg") no-repeat 100% 100%;
+      background: linear-gradient($basic-lime-green-opacity 100%, $basic-white 0);
       background-size: 100%;
     }
+  }
+
+  .additional-goods__gift-icon {
+    margin: 0;
   }
 
   .additional-goods__gift-wrapper {

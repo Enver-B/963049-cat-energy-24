@@ -142,6 +142,10 @@
     max-width: 1220px;
   }
 
+  .page-header--bg {
+    background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green-opacity 50%);
+  }
+
   .page-header__logo-wrapper {
     padding: 53px 0 0 0;
     width: 202px;

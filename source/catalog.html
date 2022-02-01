@@ -6,9 +6,10 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/favicon-mobile.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicon-mobile.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload">
   </head>
   <body class="page-body">
     <header class="page-header page-header--in">
@@ -164,19 +165,17 @@
                   <div class="catalog-card__basic-bg container">
                     <div class="catalog-card__wrapper">
                       <div class="catalog-card__bg">
-                        <div class="catalog-card__image">
-                          <picture><!--
-                            <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/catalog/catalog-image-desktop-1.webp 1x, img/webp/catalog/catalog-image-desktop-1@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/catalog/catalog-image-tablet-1.webp 1x, img/webp/catalog/catalog-image-tablet-1@2x.webp 2x">
-                            <source type="image/webp" srcset="img/webp/catalog/catalog-image-mobile-1.webp 1x, img/webp/catalog/catalog-image-mobile-1@2x.webp 2x">
-                            -->
+                        <a class="catalog-card__image" href="#">
+                          <picture>
                             <source media="(min-width: 1440px)" srcset="img/png/catalog-image/catalog-image-desktop-1.png, img/png/catalog-image/catalog-image-desktop-1@2x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/png/catalog-image/catalog-image-tablet-1.png, img/png/catalog-image/catalog-image-tablet-1@2x.png 2x">
                             <img class="catalog-card__image-card" src="img/png/catalog-image/catalog-image-mobile-1.png" srcset="img/png/catalog-image/catalog-image-mobile-1@2x.png 2x" width="68" height="86" alt="Изображение товара №1">
                           </picture>
-                        </div>
+                        </a>
                         <div class="catalog-card__content card-content">
-                          <h3 class="card-content__title">Cat Energy Pro 500 г</h3>
+                          <a class="card-content__title-link" href="#">
+                            <h3 class="card-content__title">Cat Energy Pro 500 г</h3>
+                          </a>
                           <div class="card-content__wrapper">
                             <dl class="card-content__description-list">
                               <div class="card-content__string">
@@ -203,19 +202,17 @@
                   <div class="catalog-card__basic-bg container">
                     <div class="catalog-card__wrapper">
                       <div class="catalog-card__bg">
-                        <div class="catalog-card__image">
-                          <picture><!--
-                            <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/catalog/catalog-image-desktop-2.webp 1x, img/webp/catalog/catalog-image-desktop-2@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/catalog/catalog-image-tablet-2.webp 1x, img/webp/catalog/catalog-image-tablet-2@2x.webp 2x">
-                            <source type="image/webp" srcset="img/webp/catalog/catalog-image-mobile-2.webp 1x, img/webp/catalog/catalog-image-mobile-2@2x.webp 2x">
-                            -->
+                        <a class="catalog-card__image" href="#">
+                          <picture>
                             <source media="(min-width: 1440px)" srcset="img/png/catalog-image/catalog-image-desktop-2.png, img/png/catalog-image/catalog-image-desktop-2@2x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/png/catalog-image/catalog-image-tablet-2.png, img/png/catalog-image/catalog-image-tablet-2@2x.png 2x">
                             <img class="catalog-card__image-card" src="img/png/catalog-image/catalog-image-mobile-2.png" srcset="img/png/catalog-image/catalog-image-mobile-2@2x.png 2x" width="84" height="101" alt="Изображение товара №2">
                           </picture>
-                        </div>
+                        </a>
                         <div class="catalog-card__content card-content">
-                          <h3 class="card-content__title">Cat Energy Pro 1000 г</h3>
+                          <a class="card-content__title-link" href="#">
+                            <h3 class="card-content__title">Cat Energy Pro 1000 г</h3>
+                          </a>
                           <div class="card-content__wrapper">
                             <dl class="card-content__description-list">
                               <div class="card-content__string">
@@ -242,19 +239,17 @@
                   <div class="catalog-card__basic-bg container">
                     <div class="catalog-card__wrapper">
                       <div class="catalog-card__bg">
-                        <div class="catalog-card__image">
-                          <picture><!--
-                            <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/catalog/catalog-image-desktop-3.webp 1x, img/webp/catalog/catalog-image-desktop-3@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/catalog/catalog-image-tablet-3.webp 1x, img/webp/catalog/catalog-image-tablet-3@2x.webp 2x">
-                            <source type="image/webp" srcset="img/webp/catalog/catalog-image-mobile-3.webp 1x, img/webp/catalog/catalog-image-mobile-3@2x.webp 2x">
-                            -->
+                        <a class="catalog-card__image" href="#">
+                          <picture>
                             <source media="(min-width: 1440px)" srcset="img/png/catalog-image/catalog-image-desktop-3.png, img/png/catalog-image/catalog-image-desktop-3@2x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/png/catalog-image/catalog-image-tablet-3.png, img/png/catalog-image/catalog-image-tablet-3@2x.png 2x">
                             <img class="catalog-card__image-card" src="img/png/catalog-image/catalog-image-mobile-3.png" srcset="img/png/catalog-image/catalog-image-mobile-3@2x.png 2x" width="68" height="78" alt="Изображение товара №3">
                           </picture>
-                        </div>
+                        </a>
                         <div class="catalog-card__content card-content">
-                          <h3 class="card-content__title">Cat Energy Pro 500 г</h3>
+                          <a class="card-content__title-link" href="#">
+                            <h3 class="card-content__title">Cat Energy Pro 500 г</h3>
+                          </a>
                           <div class="card-content__wrapper">
                             <dl class="card-content__description-list">
                               <div class="card-content__string">
@@ -281,19 +276,17 @@
                   <div class="catalog-card__basic-bg container">
                     <div class="catalog-card__wrapper">
                       <div class="catalog-card__bg">
-                        <div class="catalog-card__image">
-                          <picture><!--
-                            <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/catalog/catalog-image-desktop-4.webp 1x, img/webp/catalog/catalog-image-desktop-4@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/catalog/catalog-image-tablet-4.webp 1x, img/webp/catalog/catalog-image-tablet-4@2x.webp 2x">
-                            <source type="image/webp" srcset="img/webp/catalog/catalog-image-mobile-4.webp 1x, img/webp/catalog/catalog-image-mobile-4@2x.webp 2x">
-                            -->
+                        <a class="catalog-card__image" href="#">
+                          <picture>
                             <source media="(min-width: 1440px)" srcset="img/png/catalog-image/catalog-image-desktop-4.png, img/png/catalog-image/catalog-image-desktop-4@2x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/png/catalog-image/catalog-image-tablet-4.png, img/png/catalog-image/catalog-image-tablet-4@2x.png 2x">
                             <img class="catalog-card__image-card" src="img/png/catalog-image/catalog-image-mobile-4.png" srcset="img/png/catalog-image/catalog-image-mobile-4@2x.png 2x" width="84" height="101" alt="Изображение товара №4">
                           </picture>
-                        </div>
+                        </a>
                         <div class="catalog-card__content card-content">
-                          <h3 class="card-content__title">Cat Energy Pro 1000 г</h3>
+                          <a class="card-content__title-link" href="#">
+                            <h3 class="card-content__title">Cat Energy Pro 1000 г</h3>
+                          </a>
                           <div class="card-content__wrapper">
                             <dl class="card-content__description-list">
                               <div class="card-content__string">
@@ -320,19 +313,17 @@
                   <div class="catalog-card__basic-bg container">
                     <div class="catalog-card__wrapper">
                       <div class="catalog-card__bg">
-                        <div class="catalog-card__image">
-                          <picture><!--
-                            <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/catalog/catalog-image-desktop-5.webp 1x, img/webp/catalog/catalog-image-desktop-5@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/catalog/catalog-image-tablet-5.webp 1x, img/webp/catalog/catalog-image-tablet-5@2x.webp 2x">
-                            <source type="image/webp" srcset="img/webp/catalog/catalog-image-mobile-5.webp 1x, img/webp/catalog/catalog-image-mobile-5@2x.webp 2x">
-                            -->
+                        <a class="catalog-card__image" href="#">
+                          <picture>
                             <source media="(min-width: 1440px)" srcset="img/png/catalog-image/catalog-image-desktop-5.png, img/png/catalog-image/catalog-image-desktop-5@2x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/png/catalog-image/catalog-image-tablet-5.png, img/png/catalog-image/catalog-image-tablet-5@2x.png 2x">
                             <img class="catalog-card__image-card" src="img/png/catalog-image/catalog-image-mobile-5.png" srcset="img/png/catalog-image/catalog-image-mobile-5@2x.png 2x" width="68" height="78" alt="Изображение товара №5">
                           </picture>
-                        </div>
+                        </a>
                         <div class="catalog-card__content card-content">
-                          <h3 class="card-content__title">Cat Energy Slim 500 г</h3>
+                          <a class="card-content__title-link" href="#">
+                            <h3 class="card-content__title">Cat Energy Slim 500 г</h3>
+                          </a>
                           <div class="card-content__wrapper">
                             <dl class="card-content__description-list">
                               <div class="card-content__string">
@@ -359,19 +350,17 @@
                   <div class="catalog-card__basic-bg container">
                     <div class="catalog-card__wrapper">
                       <div class="catalog-card__bg">
-                        <div  class="catalog-card__image">
-                          <picture><!--
-                            <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/catalog/catalog-image-desktop-6.webp 1x, img/webp/catalog/catalog-image-desktop-6@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/catalog/catalog-image-tablet-6.webp 1x, img/webp/catalog/catalog-image-tablet-6@2x.webp 2x">
-                            <source type="image/webp" srcset="img/webp/catalog/catalog-image-mobile-6.webp 1x, img/webp/catalog/catalog-image-mobile-6@2x.webp 2x">
-                            -->
+                        <a class="catalog-card__image" href="#">
+                          <picture>
                             <source media="(min-width: 1440px)" srcset="img/png/catalog-image/catalog-image-desktop-6.png, img/png/catalog-image/catalog-image-desktop-6@2x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/png/catalog-image/catalog-image-tablet-6.png, img/png/catalog-image/catalog-image-tablet-6@2x.png 2x">
                             <img class="catalog-card__image-card" src="img/png/catalog-image/catalog-image-mobile-6.png" srcset="img/png/catalog-image/catalog-image-mobile-6@2x.png 2x" width="84" height="100" alt="Изображение товара №6">
                           </picture>
-                        </div>
+                        </a>
                         <div class="catalog-card__content card-content">
-                          <h3 class="card-content__title">Cat Energy Slim 1000 г</h3>
+                          <a class="card-content__title-link" href="#">
+                            <h3 class="card-content__title">Cat Energy Slim 1000 г</h3>
+                          </a>
                           <div class="card-content__wrapper">
                             <dl class="card-content__description-list">
                               <div class="card-content__string">
@@ -398,19 +387,17 @@
                   <div class="catalog-card__basic-bg container">
                     <div class="catalog-card__wrapper">
                       <div class="catalog-card__bg">
-                        <div  class="catalog-card__image">
-                          <picture><!--
-                            <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/catalog/catalog-image-desktop-7.webp 1x, img/webp/catalog/catalog-image-desktop-7@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/catalog/catalog-image-tablet-7.webp 1x, img/webp/catalog/catalog-image-tablet-7@2x.webp 2x">
-                            <source type="image/webp" srcset="img/webp/catalog/catalog-image-mobile-7.webp 1x, img/webp/catalog/catalog-image-mobile-7@2x.webp 2x">
-                            -->
+                        <a class="catalog-card__image" href="#">
+                          <picture>
                             <source media="(min-width: 1440px)" srcset="img/png/catalog-image/catalog-image-desktop-7.png, img/png/catalog-image/catalog-image-desktop-7@2x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/png/catalog-image/catalog-image-tablet-7.png, img/png/catalog-image/catalog-image-tablet-7@2x.png 2x">
                             <img class="catalog-card__image-card" src="img/png/catalog-image/catalog-image-mobile-7.png" srcset="img/png/catalog-image/catalog-image-mobile-7@2x.png 2x" width="72" height="84" alt="Изображение товара №7">
                           </picture>
-                        </div>
+                        </a>
                         <div class="catalog-card__content card-content">
-                          <h3 class="card-content__title">Cat Energy Slim 500 г</h3>
+                          <a class="card-content__title-link" href="#">
+                            <h3 class="card-content__title">Cat Energy Slim 500 г</h3>
+                          </a>
                           <div class="card-content__wrapper">
                             <dl class="card-content__description-list">
                               <div class="card-content__string">
@@ -446,7 +433,7 @@
                         <h3 class="catalog-card__other-title">Показать еще 100500 товаров</h3>
                         <p class="catalog-card__other-text">На самом деле вкусов гораздо больше!</p>
                       </div>
-                      <button class="catalog-card__show-all-button" type="button">Показать все</button>
+                      <a class="catalog-card__show-all-button" href="#">Показать все</a>
                     </div>
                   </div>
                 </li>
@@ -511,7 +498,18 @@
                 </ul>
               </div>
               <div class="additional-goods__gift">
-                <div  class="additional-goods__gift-wrapper">
+                <div class="additional-goods__gift-wrapper">
+                  <div class="additional-goods__bg-image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/index/additional-goods-image-bg-desktop.webp 1x, img/webp/index/additional-goods-image-bg-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/index/additional-goods-image-bg-tablet.webp 1x, img/webp/index/additional-goods-image-bg-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/webp/index/additional-goods-image-bg-mobile.webp 1x, img/webp/index/additional-goods-image-bg-mobile@2x.webp 2x">
+
+                      <source media="(min-width: 1440px)" srcset="img/jpg/additional-goods-image-bg-desktop.jpg, img/jpg/additional-goods-image-bg-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/jpg/additional-goods-image-bg-tablet.jpg, img/jpg/additional-goods-image-bg-tablet@2x.jpg 2x">
+                      <img class="additional-goods__bg-image-mobile" src="img/jpg/additional-goods-image-bg-mobile.jpg" srcset="img/jpg/additional-goods-image-bg-mobile@2x.jpg 2x" width="279" height="289" alt="Картинка кота в сумке">
+                    </picture>
+                  </div>
                   <svg class="additional-goods__gift-icon" width="78" height="80" viewBox="0 0 78 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M64.0156 34.7127H14.031C12.2766 34.7127 10.8494 33.2951 10.8494 31.5524V22.0842C10.8494 20.3415 12.2766 18.9233 14.031 18.9233H64.0149C65.7687 18.9233 67.1953 20.3415 67.1953 22.0842V31.553C67.1959 33.2951 65.7693 34.7127 64.0156 34.7127ZM14.031 21.3455C13.6276 21.3455 13.2869 21.684 13.2869 22.0842V31.553C13.2869 31.9599 13.6208 32.2912 14.031 32.2912H64.0149C64.4244 32.2912 64.7578 31.9599 64.7578 31.553V22.0842C64.7578 21.6834 64.4171 21.3455 64.0149 21.3455H14.031Z" fill="white"/>
                     <path d="M57.0447 67.1488H20.999C17.6218 67.1488 14.8741 64.4191 14.8741 61.0626V33.5016C14.8741 32.8331 15.4201 32.2905 16.0929 32.2905C16.7656 32.2905 17.3116 32.8331 17.3116 33.5016V61.0626C17.3116 63.0833 18.9661 64.7267 20.999 64.7267H57.0447C59.077 64.7267 60.7308 63.0833 60.7308 61.0626V33.5016C60.7308 32.8331 61.2768 32.2905 61.9496 32.2905C62.6223 32.2905 63.1683 32.8331 63.1683 33.5016V61.0626C63.1683 64.4191 60.4213 67.1488 57.0447 67.1488Z" fill="white"/>

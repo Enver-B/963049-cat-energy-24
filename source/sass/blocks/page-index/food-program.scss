@@ -18,7 +18,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 50%;
     display: block;
     width: auto;
@@ -136,7 +136,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header--bg,
   .food-program__wrapper {
     background: linear-gradient(90deg, $basic-white 50%, $basic-lime-green-opacity 50%);
   }

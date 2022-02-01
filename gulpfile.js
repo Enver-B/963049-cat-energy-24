@@ -47,13 +47,13 @@ const scripts = () => {
 // Images
 
 const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png,webp}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg,webp}')
     .pipe(gulp.dest('build/img'))
 }
 
@@ -70,7 +70,7 @@ const createWebp = () => {
 // Svg
 
 const svg = () =>
-  gulp.src(['source/img/svg/checkbox/*.svg', '!source/img/svg/logo/*.svg'])
+  gulp.src(['source/img/svg/checkbox/*.svg', 'source/img/*.svg', '!source/img/svg/logo/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
