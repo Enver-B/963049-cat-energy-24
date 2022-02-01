@@ -198,25 +198,20 @@
     background-color: $basic-light-gray-k;
     border: none;
     border-radius: 6px;
+    z-index: 1;
   }
 
   .live-example__range input[type="range"]::-webkit-slider-thumb {
+    position: absolute;
     width: 34px;
     height: 34px;
-    margin: -12px 0 0 0;
+    margin: -13px 0 0 194px;
     appearance: none;
     background: $basic-lime-green;
     border: 13px solid $basic-white;
     border-radius: 50%;
     cursor: pointer;
-  }
-
-  .live-example__range input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    cursor: pointer;
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
+    z-index: 5;
   }
 }
 
