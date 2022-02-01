@@ -1,10 +1,20 @@
-@import "source/sass/global/fonts.scss";
-@import "source/sass/global/colors.scss";
-@import "source/sass/global/viewports.scss";
+.healthy-food__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.healthy-food__item {
+  margin-top: 20px;
+}
 
 @media (min-width: $tablet-width) {
   .healthy-food__wrapper {
     padding: 0 30px;
+  }
+
+  .healthy-food__item:last-child {
+    margin-top: 30px;
   }
 }
 
@@ -13,19 +23,13 @@
     padding: 62px 0 0 0;
   }
 
-  .healthy-food-list {
+  .healthy-food__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
-}
 
-.healthy-food-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.healthy-food-list__item {
-  margin-top: 20px;
+  .healthy-food__item:last-child {
+    margin-top: 20px;
+  }
 }

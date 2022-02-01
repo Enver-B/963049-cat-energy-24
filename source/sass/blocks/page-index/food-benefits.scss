@@ -1,7 +1,3 @@
-@import "source/sass/global/fonts.scss";
-@import "source/sass/global/colors.scss";
-@import "source/sass/global/viewports.scss";
-
 .food-benefits {
   padding: 0;
 }
@@ -9,53 +5,66 @@
 .food-benefits__wrapper {
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 53px;
+  padding-bottom: 49px;
 }
 
-.food-benefits-list {
+.food-benefits__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.food-benefits__example-title {
+  margin: 0 0 40px 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $basic-black;
+}
+
+.food-benefits__item {
+  padding-bottom: 20px;
+}
+
+.food-benefits__item:last-child {
+  padding-bottom: 0;
+}
+
 @media (min-width: $tablet-width) {
   .food-benefits__wrapper {
     margin: 0 auto;
-    padding: 45px 105px 47px 30px;
+    padding: 45px 105px 77px 30px;
   }
 
   .food-benefits__title {
+    margin: 2px 0 32px 0;
     font-size: 60px;
     line-height: 60px;
   }
 
-  .food-benefits-list {
+  .food-benefits__list {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 37px;
-    column-gap: 154px;
+    row-gap: 72px;
+    column-gap: 133px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .food-benefits__wrapper {
     margin: 0 auto;
-    padding: 71px 0 69px 0;
+    padding: 73px 0 64px 0;
   }
 
-  .food-benefits-list {
+  .food-benefits__list {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 94px;
+    column-gap: 79px;
   }
-}
 
-.food-benefits-list__item {
-  padding-bottom: 20px;
-}
-
-.food-benefits-list__item:last-child {
-  padding-bottom: 0;
+  .food-benefits__title {
+    margin: -1px 0 39px 0;
+  }
 }

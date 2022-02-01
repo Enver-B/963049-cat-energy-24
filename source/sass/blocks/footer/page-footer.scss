@@ -1,13 +1,9 @@
-@import "source/sass/global/fonts.scss";
-@import "source/sass/global/colors.scss";
-@import "source/sass/global/viewports.scss";
-
 .page-footer {
   position: relative;
   padding: 0;
 }
 
-.footer-form {
+.page-footer--form {
   background-color: $basic-gray;
 }
 
@@ -40,7 +36,7 @@
 
 .page-footer__logo-wrapper::after {
   position: absolute;
-  top: 97px;
+  top: 94px;
   right: 20px;
   bottom: 0;
   left: 20px;
@@ -50,12 +46,20 @@
 }
 
 .page-footer__networks {
-  padding: 20px 0 21px 0;
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
+  padding: 17px 0 21px 0;
 }
 
 .page-footer__networks::after {
   position: absolute;
-  top: 162px;
+  top: 157px;
   right: 20px;
   bottom: 0;
   left: 20px;
@@ -71,7 +75,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 58px;
+    padding-top: 45px;
     padding-bottom: 55px;
   }
 
@@ -91,5 +95,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 57px 0 58px 0;
+  }
+
+  .page-footer__connections {
+    margin-top: 206px;
   }
 }

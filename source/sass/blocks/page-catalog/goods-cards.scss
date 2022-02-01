@@ -1,8 +1,4 @@
-@import "source/sass/global/fonts.scss";
-@import "source/sass/global/colors.scss";
-@import "source/sass/global/viewports.scss";
-
-.goods-cards-list {
+.goods-cards__list {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
@@ -11,90 +7,9 @@
   list-style: none;
 }
 
-.goods-card__wrapper {
-  border-bottom: 1px solid $basic-light-gray-d;
-}
-
-.goods-card__button {
-  display: block;
-  padding: 10px 0;
-  margin: 0 0 19px 0;
-  width: 100%;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.goods-card__text-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-
 @media (min-width: $tablet-width) {
-  .goods-card:last-child {
-    border-bottom: 1px solid $basic-light-gray-d;
-  }
-
-  .goods-card__wrapper {
-    padding: 26px 38px 28px 38px;
-    border-top: 1px solid $basic-light-gray-d;
-    border-right: 1px solid $basic-light-gray-d;
-    border-bottom: none;
-    border-left: 1px solid $basic-light-gray-d;
-  }
-
-  .goods-cards-list {
+  .goods-cards__list {
     margin: 0;
     padding: 0;
-  }
-
-  .goods-card__bg {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .goods-card__text-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-  }
-
-  .goods-card__text:last-child {
-    margin-left: 49px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .goods-card__wrapper {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-column-gap: 38px;
-    padding: 12px 0 14px 0;
-    border-right: none;
-    border-left: none;
-  }
-
-  .goods-card__bg {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .goods-card__text-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  .goods-card__button {
-    display: block;
-    margin: 0;
   }
 }

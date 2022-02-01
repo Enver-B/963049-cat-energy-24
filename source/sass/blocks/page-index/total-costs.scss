@@ -1,2 +1,23 @@
-@import "source/sass/global/fonts.scss";
-@import "source/sass/global/colors.scss";
+.total-costs__text {
+  margin-right: 2px;
+  margin-left: 1px;
+  line-height: 20px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .total-costs__text {
+    margin: 0 2px 8px 50px;
+    font-size: 20px;
+    line-height: 20px;
+    align-items: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .total-costs__text {
+    margin: -2px 63px 0 0;
+    align-items: end;
+  }
+}

@@ -1,13 +1,10 @@
 // global
-@import "global/colors.scss";
+@import "global/vars.scss";
 @import "global/fonts.scss";
-@import "global/helper.scss";
+@import "global/viewports.scss";
 @import "global/page-body.scss";
 @import "global/buttons.scss";
-@import "global/style-text-index.scss";
-@import "global/style-text-form.scss";
-@import "global/style-text-catalog.scss";
-@import "global/viewports.scss";
+@import "global/helper.scss";
 
 // blocks
 //header
@@ -23,18 +20,17 @@
 @import "blocks/footer/footer-catalog.scss";
 
 // page-index
-@import "blocks/page-index/page-main.scss";
 @import "blocks/page-index/benefits-content.scss";
 @import "blocks/page-index/food-benefits.scss";
 @import "blocks/page-index/food-program.scss";
 @import "blocks/page-index/healthy-food.scss";
 @import "blocks/page-index/live-example.scss";
+@import "blocks/page-index/example-stats.scss";
 @import "blocks/page-index/options-foods.scss";
 @import "blocks/page-index/total-costs.scss";
 
 //page-catalog
 @import "blocks/page-catalog/additional-goods.scss";
-@import "blocks/page-catalog/basic-catalog.scss";
 @import "blocks/page-catalog/card-content.scss";
 @import "blocks/page-catalog/catalog.scss";
 @import "blocks/page-catalog/catalog-card.scss";
@@ -49,8 +45,6 @@
 @import "blocks/page-form/page-form.scss";
 @import "blocks/page-form/page-hero.scss";
 @import "blocks/page-form/program-form.scss";
-@import "blocks/page-form/program-page.scss";
 @import "blocks/page-form/radio.scss";
 @import "blocks/page-form/user.scss";
-
-// components
+@import "blocks/page-form/field-text.scss";

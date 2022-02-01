@@ -1,27 +1,4 @@
-@import "source/sass/global/fonts.scss";
-@import "source/sass/global/colors.scss";
-@import "source/sass/global/viewports.scss";
-
 .nav-list {
-  &__item {
-    padding: 22px 0 24px 0;
-    border-top: 1px solid $basic-light-gray-b;
-  }
-
-  &__item a {
-    display: block;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    color: $basic-black;
-    text-decoration: none;
-  }
-
-  &__item--active {
-    position: relative;
-  }
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -29,33 +6,54 @@
   list-style: none;
 }
 
+.nav-list__item {
+  padding: 22px 0 24px 0;
+  border-top: 1px solid $basic-light-gray-b;
+}
+
+.nav-list__item a {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-black;
+  text-decoration: none;
+}
+
+.nav-list__item--active {
+  position: relative;
+}
+
 @media (min-width: $tablet-width) {
   .nav-list {
-    &__item {
-      border-top: none;
-    }
-
-    &__item--active::after {
-      content: "";
-      position: absolute;
-      top: 58px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: $basic-lime-green;
-    }
-
-    &__item a {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 24px;
-    }
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 440px;
+    margin: 0 2px 0 0;
+  }
+
+  .nav-list__item {
+    padding: 18px 0 0 0;
+    border-top: none;
+  }
+
+  .nav-list__item--active::after {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: -1px;
+    width: 100%;
+    height: 2px;
+    background-color: $basic-lime-green;
+  }
+
+  .nav-list__item a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .nav-list__item a:hover {
@@ -69,52 +67,52 @@
 
 @media (min-width: $desktop-width) {
   .nav-list {
-    &__item {
-      padding: 0;
-      z-index: 5;
-    }
-
-    &__item a {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 30px;
-      color: $basic-white;
-      z-index: 5;
-    }
-
-    &__item--in a {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 30px;
-      color: $basic-black;
-    }
-
-    &__item--active::after {
-      content: "";
-      position: absolute;
-      top: 38px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: $basic-lime-green;
-    }
-
-    &__item--active-main {
-      position: relative;
-    }
-
-    &__item--active-main::after {
-      content: "";
-      position: absolute;
-      top: 38px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: $basic-white;
-    }
-
     padding: 69px 0 0 132px;
     width: 478px;
+  }
+
+  .nav-list__item {
+    padding: 0;
+    z-index: 5;
+  }
+
+  .nav-list__item a {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $basic-white;
+    z-index: 5;
+  }
+
+  .nav-list__item--in a {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $basic-black;
+  }
+
+  .nav-list__item--active::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $basic-lime-green;
+  }
+
+  .nav-list__item--active-main {
+    position: relative;
+  }
+
+  .nav-list__item--active-main::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $basic-white;
   }
 
   .nav-list__item a:hover {

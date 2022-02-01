@@ -1,4 +1,4 @@
-headerToggle.classList.remove('toggle-nav--nojs');
+headerToggle.classList.remove('page-header__toggle--nojs');
 
 headerToggle.addEventListener('click', function () {
   if (headerToggle.classList.contains('page-header__toggle--hide')) {

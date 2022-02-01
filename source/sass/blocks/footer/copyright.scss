@@ -1,6 +1,7 @@
-@import "source/sass/global/fonts.scss";
-@import "source/sass/global/colors.scss";
-@import "source/sass/global/viewports.scss";
+.copyright__name {
+  font-size: 16px;
+  color: $basic-dark-gray;
+}
 
 .copyright__name-wrapper {
   display: flex;
